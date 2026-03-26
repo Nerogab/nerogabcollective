@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nerogab Clothing Concepts – Fashion for Every Style</title>
+<meta name="description" content="Shop the latest women, men, accessories, footwear and bags at Nerogab Clothing Concepts. Affordable fashion with fast delivery across Nigeria.">
+<meta name="keywords" content="Nerogab Clothing, Nigerian fashion, women clothes, men clothes, accessories, footwear, bags Nigeria">
+<meta property="og:title" content="Nerogab Clothing Concepts">
+<meta property="og:description" content="Trendy fashion at amazing prices. Shop now at Nerogab Clothing Concepts.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #c8102e;
+    --primary-dark: #9e0c24;
+    --primary-light: #ff3355;
+    --gold: #d4a843;
+    --black: #0d0d0d;
+    --white: #ffffff;
+    --grey-100: #f7f7f7;
+    --grey-200: #eeeeee;
+    --grey-300: #cccccc;
+    --grey-500: #888888;
+    --grey-700: #444444;
+    --text: #1a1a1a;
+    --border: #e0e0e0;
+    --card-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    --card-hover-shadow: 0 8px 32px rgba(200,16,46,0.18);
+    --radius: 12px;
+    --radius-sm: 6px;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:var(--font-body); color:var(--text); background:#fff; overflow-x:hidden; }
+
+  /* ===== NAVBAR ===== */
+  .topbar { background:var(--primary); color:#fff; text-align:center; padding:8px; font-size:13px; letter-spacing:0.5px; }
+  .topbar span { margin:0 12px; }
+  nav { background:#fff; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:1000; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .nav-inner { max-width:1400px; margin:0 auto; padding:0 20px; display:flex; align-items:center; gap:20px; height:64px; }
+  .logo { font-family:var(--font-display); font-size:22px; font-weight:900; color:var(--primary); text-decoration:none; white-space:nowrap; flex-shrink:0; letter-spacing:-0.5px; }
+  .logo span { color:var(--gold); }
+  .nav-links { display:flex; gap:4px; flex:1; justify-content:center; }
+  .nav-links a { text-decoration:none; color:var(--grey-700); font-size:14px; font-weight:500; padding:8px 12px; border-radius:6px; transition:all .2s; white-space:nowrap; }
+  .nav-links a:hover, .nav-links a.active { color:var(--primary); background:rgba(200,16,46,0.06); }
+  .nav-actions { display:flex; align-items:center; gap:8px; flex-shrink:0; }
+  .nav-btn { background:none; border:none; cursor:pointer; padding:8px; border-radius:8px; display:flex; align-items:center; gap:6px; font-size:13px; color:var(--grey-700); transition:all .2s; position:relative; }
+  .nav-btn:hover { color:var(--primary); background:rgba(200,16,46,0.06); }
+  .cart-count { background:var(--primary); color:#fff; border-radius:50%; width:18px; height:18px; font-size:10px; font-weight:700; display:flex; align-items:center; justify-content:center; position:absolute; top:2px; right:2px; }
+  .search-bar { display:flex; align-items:center; border:1.5px solid var(--border); border-radius:24px; overflow:hidden; background:#f7f7f7; transition:all .2s; }
+  .search-bar:focus-within { border-color:var(--primary); background:#fff; box-shadow:0 0 0 3px rgba(200,16,46,0.08); }
+  .search-bar input { border:none; background:none; padding:8px 16px; font-size:14px; outline:none; width:220px; font-family:var(--font-body); }
+  .search-bar button { background:var(--primary); border:none; color:#fff; padding:8px 16px; cursor:pointer; font-size:14px; transition:background .2s; }
+  .search-bar button:hover { background:var(--primary-dark); }
+  .hamburger { display:none; background:none; border:none; cursor:pointer; padding:8px; }
+
+  /* ===== HERO ===== */
+  .hero { position:relative; min-height:520px; display:flex; align-items:center; overflow:hidden; background:linear-gradient(135deg, #0d0d0d 0%, #1a0a0f 60%, #2d0a16 100%); }
+  .hero-bg { position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1600&q=80') center/cover; opacity:0.18; }
+  .hero-content { position:relative; max-width:1400px; margin:0 auto; padding:60px 20px; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; width:100%; }
+  .hero-text { color:#fff; }
+  .hero-badge { display:inline-flex; align-items:center; gap:8px; background:rgba(212,168,67,0.2); border:1px solid var(--gold); color:var(--gold); padding:6px 14px; border-radius:20px; font-size:12px; font-weight:600; letter-spacing:1px; text-transform:uppercase; margin-bottom:20px; }
+  .hero-title { font-family:var(--font-display); font-size:clamp(36px, 5vw, 64px); line-height:1.1; font-weight:900; margin-bottom:20px; }
+  .hero-title .accent { color:var(--primary-light); display:block; }
+  .hero-subtitle { font-size:16px; color:rgba(255,255,255,0.7); margin-bottom:32px; line-height:1.6; max-width:440px; }
+  .hero-actions { display:flex; gap:12px; flex-wrap:wrap; }
+  .btn-primary { background:var(--primary); color:#fff; border:none; padding:14px 28px; border-radius:8px; font-size:15px; font-weight:600; cursor:pointer; transition:all .2s; text-decoration:none; display:inline-flex; align-items:center; gap:8px; }
+  .btn-primary:hover { background:var(--primary-dark); transform:translateY(-1px); box-shadow:0 4px 16px rgba(200,16,46,0.4); }
+  .btn-outline { background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.4); padding:13px 28px; border-radius:8px; font-size:15px; font-weight:600; cursor:pointer; transition:all .2s; text-decoration:none; display:inline-flex; align-items:center; gap:8px; }
+  .btn-outline:hover { border-color:#fff; background:rgba(255,255,255,0.1); }
+  .hero-stats { display:flex; gap:32px; margin-top:40px; }
+  .hero-stat { text-align:center; }
+  .hero-stat-num { font-family:var(--font-display); font-size:28px; font-weight:700; color:#fff; }
+  .hero-stat-label { font-size:11px; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:1px; margin-top:2px; }
+  .hero-images { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .hero-img-card { border-radius:12px; overflow:hidden; aspect-ratio:3/4; position:relative; }
+  .hero-img-card:first-child { margin-top:30px; }
+  .hero-img-card img { width:100%; height:100%; object-fit:cover; }
+  .hero-img-badge { position:absolute; bottom:12px; left:12px; background:rgba(0,0,0,0.75); backdrop-filter:blur(8px); color:#fff; padding:6px 12px; border-radius:8px; font-size:12px; font-weight:600; }
+
+  /* ===== PROMO BANNER ===== */
+  .promo-strip { background:var(--gold); padding:12px; display:flex; justify-content:center; gap:40px; flex-wrap:wrap; }
+  .promo-item { display:flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--black); }
+
+  /* ===== SECTION STYLES ===== */
+  .section { max-width:1400px; margin:0 auto; padding:60px 20px; }
+  .section-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:32px; }
+  .section-title { font-family:var(--font-display); font-size:clamp(24px, 3vw, 36px); font-weight:700; color:var(--black); }
+  .section-title span { color:var(--primary); }
+  .section-subtitle { color:var(--grey-500); font-size:14px; margin-top:4px; }
+  .view-all { color:var(--primary); font-size:14px; font-weight:600; text-decoration:none; display:flex; align-items:center; gap:4px; border:1.5px solid var(--primary); padding:8px 16px; border-radius:6px; transition:all .2s; white-space:nowrap; }
+  .view-all:hover { background:var(--primary); color:#fff; }
+
+  /* ===== CATEGORY GRID ===== */
+  .category-grid { display:grid; grid-template-columns:repeat(5, 1fr); gap:16px; }
+  .cat-card { position:relative; border-radius:var(--radius); overflow:hidden; aspect-ratio:3/4; cursor:pointer; group; text-decoration:none; display:block; }
+  .cat-card img { width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+  .cat-card:hover img { transform:scale(1.06); }
+  .cat-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 60%); }
+  .cat-label { position:absolute; bottom:16px; left:16px; right:16px; color:#fff; font-family:var(--font-display); font-size:18px; font-weight:700; }
+  .cat-count { font-family:var(--font-body); font-size:12px; opacity:0.8; display:block; margin-top:2px; }
+  .cat-card::after { content:''; position:absolute; inset:0; border:2px solid transparent; border-radius:var(--radius); transition:border-color .2s; }
+  .cat-card:hover::after { border-color:var(--primary); }
+
+  /* ===== PRODUCT GRID ===== */
+  .product-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:20px; }
+  .product-card { background:#fff; border-radius:var(--radius); overflow:hidden; border:1px solid var(--border); transition:all .25s; cursor:pointer; position:relative; }
+  .product-card:hover { transform:translateY(-4px); box-shadow:var(--card-hover-shadow); border-color:var(--primary-light); }
+  .product-img-wrap { position:relative; aspect-ratio:3/4; overflow:hidden; background:var(--grey-100); }
+  .product-img-wrap img { width:100%; height:100%; object-fit:cover; transition:transform .4s; }
+  .product-card:hover .product-img-wrap img { transform:scale(1.05); }
+  .product-badge { position:absolute; top:10px; left:10px; background:var(--primary); color:#fff; font-size:11px; font-weight:700; padding:3px 8px; border-radius:4px; z-index:2; }
+  .product-badge.new { background:var(--gold); color:#000; }
+  .product-badge.hot { background:#ff6600; }
+  .product-wishlist { position:absolute; top:10px; right:10px; background:#fff; border:none; border-radius:50%; width:32px; height:32px; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,0.12); opacity:0; transform:translateY(-4px); transition:all .2s; font-size:16px; z-index:2; }
+  .product-card:hover .product-wishlist { opacity:1; transform:translateY(0); }
+  .product-wishlist.active { opacity:1; color:var(--primary); }
+  .product-quick-add { position:absolute; bottom:0; left:0; right:0; background:var(--black); color:#fff; border:none; padding:10px; font-size:13px; font-weight:600; cursor:pointer; transform:translateY(100%); transition:transform .25s; text-align:center; letter-spacing:0.5px; }
+  .product-card:hover .product-quick-add { transform:translateY(0); }
+  .product-info { padding:12px; }
+  .product-name { font-size:13px; color:var(--text); line-height:1.4; margin-bottom:6px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .product-prices { display:flex; align-items:center; gap:8px; }
+  .product-price { font-size:16px; font-weight:700; color:var(--primary); }
+  .product-original { font-size:12px; color:var(--grey-500); text-decoration:line-through; }
+  .product-discount { font-size:11px; color:#ff6600; font-weight:700; }
+  .product-rating { display:flex; align-items:center; gap:4px; margin-top:6px; }
+  .stars { color:var(--gold); font-size:11px; letter-spacing:1px; }
+  .review-count { font-size:11px; color:var(--grey-500); }
+  .product-sizes { display:flex; gap:4px; flex-wrap:wrap; margin-top:6px; }
+  .size-tag { font-size:10px; border:1px solid var(--grey-300); padding:1px 5px; border-radius:3px; color:var(--grey-600); }
+
+  /* ===== FILTERS ===== */
+  .shop-layout { max-width:1400px; margin:0 auto; padding:20px; display:grid; grid-template-columns:240px 1fr; gap:24px; }
+  .filter-panel { background:#fff; border:1px solid var(--border); border-radius:var(--radius); padding:20px; height:fit-content; position:sticky; top:84px; }
+  .filter-title { font-weight:700; font-size:16px; margin-bottom:16px; }
+  .filter-group { margin-bottom:20px; border-bottom:1px solid var(--grey-200); padding-bottom:16px; }
+  .filter-group:last-child { border-bottom:none; }
+  .filter-group-title { font-size:13px; font-weight:600; color:var(--grey-700); margin-bottom:10px; text-transform:uppercase; letter-spacing:0.5px; }
+  .filter-option { display:flex; align-items:center; gap:8px; margin-bottom:8px; cursor:pointer; font-size:13px; }
+  .filter-option input { accent-color:var(--primary); }
+  .price-range { display:flex; gap:8px; align-items:center; }
+  .price-input { border:1px solid var(--border); border-radius:6px; padding:6px 10px; width:80px; font-size:13px; outline:none; }
+  .price-input:focus { border-color:var(--primary); }
+  .apply-filter { background:var(--primary); color:#fff; border:none; width:100%; padding:10px; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; margin-top:12px; transition:background .2s; }
+  .apply-filter:hover { background:var(--primary-dark); }
+
+  /* ===== PAGES ===== */
+  .page { display:none; }
+  .page.active { display:block; }
+
+  /* ===== MODAL/CART ===== */
+  .overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:2000; }
+  .overlay.active { display:block; }
+  .cart-panel { position:fixed; right:0; top:0; bottom:0; width:420px; background:#fff; z-index:2001; transform:translateX(100%); transition:transform .3s; display:flex; flex-direction:column; box-shadow:-4px 0 24px rgba(0,0,0,0.12); }
+  .cart-panel.open { transform:translateX(0); }
+  .cart-header { padding:20px 24px; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; }
+  .cart-header h2 { font-family:var(--font-display); font-size:20px; }
+  .cart-close { background:none; border:none; font-size:22px; cursor:pointer; color:var(--grey-500); }
+  .cart-items { flex:1; overflow-y:auto; padding:16px 24px; }
+  .cart-item { display:flex; gap:12px; padding:12px 0; border-bottom:1px solid var(--grey-200); align-items:flex-start; }
+  .cart-item img { width:70px; height:90px; object-fit:cover; border-radius:8px; }
+  .cart-item-info { flex:1; }
+  .cart-item-name { font-size:13px; line-height:1.4; margin-bottom:4px; }
+  .cart-item-meta { font-size:12px; color:var(--grey-500); margin-bottom:8px; }
+  .cart-item-actions { display:flex; align-items:center; justify-content:space-between; }
+  .qty-control { display:flex; align-items:center; gap:0; border:1px solid var(--border); border-radius:6px; overflow:hidden; }
+  .qty-btn { background:var(--grey-100); border:none; width:28px; height:28px; cursor:pointer; font-size:16px; font-weight:600; display:flex; align-items:center; justify-content:center; transition:background .15s; }
+  .qty-btn:hover { background:var(--grey-200); }
+  .qty-val { width:32px; text-align:center; font-size:13px; font-weight:600; border:none; outline:none; background:#fff; }
+  .cart-item-price { font-weight:700; font-size:15px; color:var(--primary); }
+  .remove-item { background:none; border:none; color:var(--grey-400); cursor:pointer; font-size:18px; padding:4px; }
+  .cart-footer { padding:20px 24px; border-top:1px solid var(--border); }
+  .cart-subtotal { display:flex; justify-content:space-between; font-size:16px; font-weight:600; margin-bottom:16px; }
+  .checkout-btn { background:var(--primary); color:#fff; border:none; width:100%; padding:16px; font-size:16px; font-weight:700; border-radius:8px; cursor:pointer; transition:background .2s; }
+  .checkout-btn:hover { background:var(--primary-dark); }
+  .cart-empty { text-align:center; padding:60px 20px; color:var(--grey-500); }
+  .cart-empty .empty-icon { font-size:48px; margin-bottom:16px; }
+
+  /* ===== PRODUCT MODAL ===== */
+  .product-modal { position:fixed; inset:0; z-index:3000; display:none; align-items:center; justify-content:center; padding:20px; }
+  .product-modal.open { display:flex; }
+  .product-modal-bg { position:absolute; inset:0; background:rgba(0,0,0,0.6); }
+  .product-modal-inner { position:relative; background:#fff; border-radius:16px; max-width:900px; width:100%; max-height:90vh; overflow-y:auto; display:grid; grid-template-columns:1fr 1fr; }
+  .modal-img-section { background:var(--grey-100); border-radius:16px 0 0 16px; overflow:hidden; }
+  .modal-img-section img { width:100%; height:100%; object-fit:cover; min-height:400px; }
+  .modal-info { padding:32px; }
+  .modal-close { position:absolute; top:16px; right:16px; background:#fff; border:none; border-radius:50%; width:36px; height:36px; font-size:20px; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,0.1); z-index:1; display:flex; align-items:center; justify-content:center; }
+  .modal-category { font-size:11px; color:var(--primary); font-weight:700; text-transform:uppercase; letter-spacing:2px; margin-bottom:8px; }
+  .modal-name { font-family:var(--font-display); font-size:22px; font-weight:700; line-height:1.3; margin-bottom:12px; }
+  .modal-price-row { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+  .modal-price { font-size:28px; font-weight:700; color:var(--primary); }
+  .modal-original { font-size:16px; color:var(--grey-400); text-decoration:line-through; }
+  .modal-badge { background:var(--primary); color:#fff; font-size:12px; font-weight:700; padding:4px 8px; border-radius:4px; }
+  .modal-section-label { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--grey-600); margin-bottom:8px; margin-top:16px; }
+  .size-options { display:flex; gap:8px; flex-wrap:wrap; }
+  .size-opt { border:1.5px solid var(--border); padding:6px 12px; border-radius:6px; font-size:13px; font-weight:500; cursor:pointer; transition:all .15s; }
+  .size-opt:hover, .size-opt.selected { border-color:var(--primary); color:var(--primary); background:rgba(200,16,46,0.06); }
+  .color-options { display:flex; gap:8px; flex-wrap:wrap; }
+  .color-dot { width:28px; height:28px; border-radius:50%; cursor:pointer; border:2px solid transparent; transition:border .15s; }
+  .color-dot.selected { border-color:var(--primary); }
+  .modal-desc { font-size:13px; color:var(--grey-600); line-height:1.7; margin-top:8px; }
+  .modal-add-btn { background:var(--primary); color:#fff; border:none; width:100%; padding:15px; border-radius:8px; font-size:15px; font-weight:700; cursor:pointer; margin-top:20px; transition:background .2s; }
+  .modal-add-btn:hover { background:var(--primary-dark); }
+  .shipping-info { background:var(--grey-100); border-radius:8px; padding:12px 16px; margin-top:16px; font-size:12px; color:var(--grey-600); display:flex; align-items:center; gap:8px; }
+
+  /* ===== CHECKOUT PAGE ===== */
+  .checkout-page { max-width:900px; margin:0 auto; padding:40px 20px; }
+  .checkout-steps { display:flex; justify-content:center; gap:0; margin-bottom:40px; }
+  .step { display:flex; align-items:center; gap:0; }
+  .step-circle { width:36px; height:36px; border-radius:50%; background:var(--grey-200); color:var(--grey-500); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; transition:all .2s; }
+  .step.active .step-circle { background:var(--primary); color:#fff; }
+  .step.done .step-circle { background:var(--primary); color:#fff; }
+  .step-label { font-size:12px; color:var(--grey-500); margin-top:4px; text-align:center; }
+  .step-line { width:80px; height:2px; background:var(--grey-200); margin:0 8px; margin-bottom:16px; }
+  .step.done + .step .step-line, .step.active + .step .step-line { background:var(--primary); }
+  .checkout-grid { display:grid; grid-template-columns:1fr 380px; gap:32px; }
+  .checkout-card { background:#fff; border:1px solid var(--border); border-radius:var(--radius); padding:24px; margin-bottom:20px; }
+  .checkout-card h3 { font-family:var(--font-display); font-size:18px; font-weight:700; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid var(--border); }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .form-group { margin-bottom:16px; }
+  .form-group label { display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:var(--grey-700); }
+  .form-group input, .form-group select, .form-group textarea { width:100%; border:1.5px solid var(--border); border-radius:8px; padding:10px 14px; font-size:14px; font-family:var(--font-body); outline:none; transition:border .2s; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color:var(--primary); }
+  .payment-box { background:linear-gradient(135deg, #fff8e1 0%, #fff3cd 100%); border:2px solid var(--gold); border-radius:12px; padding:24px; margin-top:16px; }
+  .payment-box h4 { font-family:var(--font-display); font-size:18px; font-weight:700; color:var(--black); margin-bottom:16px; display:flex; align-items:center; gap:8px; }
+  .bank-detail { display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid rgba(212,168,67,0.3); }
+  .bank-detail:last-of-type { border-bottom:none; }
+  .bank-label { font-size:13px; color:var(--grey-600); }
+  .bank-value { font-size:14px; font-weight:700; color:var(--black); }
+  .copy-btn { background:var(--gold); border:none; padding:4px 10px; border-radius:4px; font-size:11px; cursor:pointer; font-weight:600; }
+  .payment-steps { background:#fff; border-radius:8px; padding:16px; margin-top:12px; }
+  .payment-step { display:flex; gap:10px; margin-bottom:10px; font-size:13px; }
+  .payment-step-num { background:var(--primary); color:#fff; width:20px; height:20px; border-radius:50%; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:1px; }
+  .order-summary-item { display:flex; gap:12px; align-items:center; padding:10px 0; border-bottom:1px solid var(--grey-200); }
+  .order-summary-item img { width:56px; height:72px; object-fit:cover; border-radius:6px; }
+  .order-total-row { display:flex; justify-content:space-between; padding:8px 0; font-size:14px; }
+  .order-total-row.total { font-weight:700; font-size:16px; border-top:2px solid var(--border); padding-top:12px; margin-top:4px; }
+  .place-order-btn { background:var(--primary); color:#fff; border:none; width:100%; padding:16px; font-size:16px; font-weight:700; border-radius:8px; cursor:pointer; margin-top:16px; transition:all .2s; }
+  .place-order-btn:hover { background:var(--primary-dark); transform:translateY(-1px); }
+
+  /* ===== ORDER SUCCESS ===== */
+  .order-success { text-align:center; max-width:600px; margin:60px auto; padding:40px; }
+  .success-icon { font-size:72px; margin-bottom:16px; }
+  .order-id-box { background:var(--grey-100); border-radius:8px; padding:16px 24px; margin:24px 0; font-family:monospace; font-size:20px; font-weight:700; letter-spacing:2px; color:var(--primary); }
+
+  /* ===== ORDER TRACKING ===== */
+  .tracking-page { max-width:700px; margin:0 auto; padding:40px 20px; }
+  .order-track-card { background:#fff; border:1px solid var(--border); border-radius:var(--radius); padding:24px; margin-bottom:20px; }
+  .track-status { display:flex; justify-content:space-between; margin:24px 0; position:relative; }
+  .track-status::before { content:''; position:absolute; top:16px; left:10%; right:10%; height:2px; background:var(--grey-200); z-index:0; }
+  .track-step { display:flex; flex-direction:column; align-items:center; gap:8px; flex:1; position:relative; z-index:1; }
+  .track-dot { width:32px; height:32px; border-radius:50%; background:var(--grey-200); display:flex; align-items:center; justify-content:center; font-size:14px; }
+  .track-dot.done { background:var(--primary); color:#fff; }
+  .track-dot.active { background:var(--primary); color:#fff; box-shadow:0 0 0 4px rgba(200,16,46,0.2); }
+  .track-label { font-size:11px; font-weight:600; color:var(--grey-500); text-align:center; }
+  .track-label.active { color:var(--primary); }
+
+  /* ===== ABOUT PAGE ===== */
+  .about-hero { background:linear-gradient(135deg, var(--black) 0%, #2d0a16 100%); color:#fff; padding:80px 20px; text-align:center; }
+  .about-hero h1 { font-family:var(--font-display); font-size:clamp(32px, 5vw, 56px); font-weight:900; margin-bottom:16px; }
+  .about-hero p { font-size:18px; opacity:0.7; max-width:600px; margin:0 auto; }
+  .about-content { max-width:900px; margin:0 auto; padding:60px 20px; }
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; margin-bottom:60px; }
+  .about-img { border-radius:var(--radius); overflow:hidden; aspect-ratio:4/3; }
+  .about-img img { width:100%; height:100%; object-fit:cover; }
+  .reg-card { background:var(--grey-100); border-radius:var(--radius); padding:24px; border-left:4px solid var(--primary); }
+  .reg-card h3 { font-family:var(--font-display); font-size:18px; margin-bottom:12px; }
+  .reg-row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--grey-200); font-size:14px; }
+  .reg-row:last-child { border-bottom:none; }
+  .reg-label { color:var(--grey-500); }
+  .reg-val { font-weight:600; }
+
+  /* ===== CONTACT PAGE ===== */
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; max-width:1000px; margin:0 auto; padding:60px 20px; }
+  .contact-info-item { display:flex; gap:16px; align-items:flex-start; padding:16px 0; border-bottom:1px solid var(--grey-200); }
+  .contact-icon { font-size:24px; width:48px; height:48px; background:rgba(200,16,46,0.1); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+
+  /* ===== LEGAL PAGES ===== */
+  .legal-page { max-width:800px; margin:0 auto; padding:40px 20px; }
+  .legal-page h1 { font-family:var(--font-display); font-size:clamp(24px,3vw,36px); margin-bottom:8px; }
+  .legal-page .last-updated { font-size:13px; color:var(--grey-500); margin-bottom:32px; }
+  .legal-page h2 { font-size:18px; font-weight:700; margin:28px 0 12px; color:var(--primary); }
+  .legal-page p, .legal-page li { font-size:14px; line-height:1.8; color:var(--grey-700); margin-bottom:12px; }
+  .legal-page ul { padding-left:20px; }
+
+  /* ===== FOOTER ===== */
+  footer { background:var(--black); color:#ccc; padding:60px 20px 20px; margin-top:60px; }
+  .footer-grid { max-width:1400px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:40px; }
+  .footer-brand .logo { font-size:24px; display:block; margin-bottom:16px; }
+  .footer-brand p { font-size:13px; line-height:1.7; color:#888; max-width:280px; }
+  .footer-social { display:flex; gap:10px; margin-top:20px; }
+  .social-btn { width:36px; height:36px; border-radius:8px; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; font-size:16px; cursor:pointer; transition:background .2s; text-decoration:none; }
+  .social-btn:hover { background:var(--primary); }
+  .footer-col h4 { color:#fff; font-size:14px; font-weight:700; margin-bottom:16px; text-transform:uppercase; letter-spacing:1px; }
+  .footer-col a { display:block; color:#888; text-decoration:none; font-size:13px; margin-bottom:10px; transition:color .2s; }
+  .footer-col a:hover { color:#fff; }
+  .footer-bottom { max-width:1400px; margin:0 auto; border-top:1px solid rgba(255,255,255,0.08); padding-top:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:12px; color:#666; }
+  .footer-rc { background:rgba(255,255,255,0.05); border-radius:6px; padding:8px 16px; font-size:12px; color:#888; }
+
+  /* ===== TOAST ===== */
+  .toast { position:fixed; bottom:30px; right:30px; background:var(--black); color:#fff; padding:14px 20px; border-radius:10px; font-size:14px; z-index:5000; transform:translateY(100px); opacity:0; transition:all .3s; display:flex; align-items:center; gap:10px; max-width:320px; }
+  .toast.show { transform:translateY(0); opacity:1; }
+  .toast .toast-icon { color:#4caf50; font-size:18px; }
+
+  /* ===== ADMIN PANEL ===== */
+  .admin-page { max-width:1000px; margin:0 auto; padding:40px 20px; }
+  .admin-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .admin-table { width:100%; border-collapse:collapse; font-size:13px; }
+  .admin-table th { background:var(--grey-100); padding:12px 16px; text-align:left; font-weight:700; border-bottom:2px solid var(--border); }
+  .admin-table td { padding:12px 16px; border-bottom:1px solid var(--grey-200); vertical-align:middle; }
+  .status-badge { display:inline-flex; align-items:center; gap:4px; padding:3px 10px; border-radius:20px; font-size:11px; font-weight:700; text-transform:uppercase; }
+  .status-pending { background:#fff3e0; color:#e65100; }
+  .status-paid { background:#e8f5e9; color:#2e7d32; }
+  .status-shipped { background:#e3f2fd; color:#1565c0; }
+  .status-delivered { background:#e8f5e9; color:#1b5e20; }
+  .admin-select { border:1px solid var(--border); border-radius:4px; padding:4px 8px; font-size:12px; }
+
+  /* ===== BREADCRUMB ===== */
+  .breadcrumb { max-width:1400px; margin:0 auto; padding:16px 20px; font-size:13px; color:var(--grey-500); }
+  .breadcrumb a { color:var(--grey-500); text-decoration:none; }
+  .breadcrumb a:hover { color:var(--primary); }
+  .breadcrumb span { margin:0 6px; }
+
+  /* ===== MOBILE ===== */
+  .mobile-nav { display:none; position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid var(--border); z-index:999; }
+  .mobile-nav-inner { display:flex; justify-content:space-around; padding:8px 0; }
+  .mobile-nav-item { display:flex; flex-direction:column; align-items:center; gap:3px; text-decoration:none; color:var(--grey-500); font-size:10px; font-weight:500; padding:4px 12px; border-radius:8px; transition:color .2s; background:none; border:none; cursor:pointer; }
+  .mobile-nav-item.active, .mobile-nav-item:hover { color:var(--primary); }
+  .mobile-nav-item .nav-icon { font-size:20px; }
+
+  @media(max-width:1024px) {
+    .category-grid { grid-template-columns:repeat(3, 1fr); }
+    .hero-content { grid-template-columns:1fr; text-align:center; }
+    .hero-images { display:none; }
+    .hero-stats { justify-content:center; }
+    .footer-grid { grid-template-columns:1fr 1fr; }
+    .shop-layout { grid-template-columns:1fr; }
+    .filter-panel { display:none; }
+    .checkout-grid { grid-template-columns:1fr; }
+    .about-grid { grid-template-columns:1fr; }
+    .contact-grid { grid-template-columns:1fr; }
+    .product-modal-inner { grid-template-columns:1fr; }
+    .modal-img-section { border-radius:16px 16px 0 0; }
+    .modal-img-section img { min-height:280px; }
+  }
+  @media(max-width:768px) {
+    .topbar { display:none; }
+    .nav-links { display:none; }
+    .search-bar input { width:140px; }
+    .category-grid { grid-template-columns:repeat(2, 1fr); }
+    .product-grid { grid-template-columns:repeat(2, 1fr); gap:12px; }
+    .footer-grid { grid-template-columns:1fr; }
+    .form-row { grid-template-columns:1fr; }
+    .mobile-nav { display:block; }
+    body { padding-bottom:70px; }
+    .hamburger { display:flex; }
+  }
+  @media(max-width:480px) {
+    .promo-strip { gap:16px; }
+    .hero { min-height:400px; }
+    .cart-panel { width:100%; }
+  }
+
+  /* ===== UTILITIES ===== */
+  .text-center { text-align:center; }
+  .mt-20 { margin-top:20px; }
+  .mt-40 { margin-top:40px; }
+  .gap-fill { flex:1; }
+  .red { color:var(--primary); }
+  .bold { font-weight:700; }
+  .banner-strip { background:var(--primary); color:#fff; text-align:center; padding:40px 20px; border-radius:var(--radius); margin:0 20px 60px; }
+  .banner-strip h2 { font-family:var(--font-display); font-size:28px; margin-bottom:8px; }
+  .banner-strip p { opacity:0.8; margin-bottom:20px; }
+  .loading-dots { display:inline-flex; gap:4px; }
+  .loading-dots span { width:6px; height:6px; border-radius:50%; background:var(--primary); animation:bounce 1.2s infinite; }
+  .loading-dots span:nth-child(2) { animation-delay:.2s; }
+  .loading-dots span:nth-child(3) { animation-delay:.4s; }
+  @keyframes bounce { 0%,80%,100%{transform:scale(0.6)}40%{transform:scale(1)} }
+  .badge-new { background:#00a651; color:#fff; font-size:10px; font-weight:700; padding:2px 6px; border-radius:3px; }
+  .badge-sale { background:var(--primary); color:#fff; font-size:10px; font-weight:700; padding:2px 6px; border-radius:3px; }
+  .truncate-2 { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>🚚 Free delivery on orders above ₦25,000</span>
+  <span>|</span>
+  <span>📦 Track your order anytime</span>
+  <span>|</span>
+  <span>📞 +234 808 086 8957</span>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="#" onclick="showPage('home')">Nero<span>gab</span></a>
+    <div class="nav-links">
+      <a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a>
+      <a href="#" onclick="showShop('all')" id="nav-shop">All Products</a>
+      <a href="#" onclick="showShop('women')" id="nav-women">Women</a>
+      <a href="#" onclick="showShop('men')" id="nav-men">Men</a>
+      <a href="#" onclick="showShop('accessories')" id="nav-accessories">Accessories</a>
+      <a href="#" onclick="showShop('footwear')" id="nav-footwear">Footwear</a>
+      <a href="#" onclick="showShop('bags')" id="nav-bags">Bags</a>
+    </div>
+    <div class="nav-actions">
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." id="searchInput" oninput="handleSearch()">
+        <button onclick="handleSearch()">🔍</button>
+      </div>
+      <button class="nav-btn" onclick="toggleCart()">
+        🛒 Cart
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav-btn" onclick="showPage('track')">📦 Track</button>
+      <button class="nav-btn" onclick="showPage('admin')" title="Admin">⚙️</button>
+    </div>
+    <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
+  </div>
+</nav>
+
+<!-- PAGES -->
+<div id="pageContainer">
+
+  <!-- ======== HOME PAGE ======== -->
+  <div id="page-home" class="page active">
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">✨ New Season Collection 2025</div>
+          <h1 class="hero-title">
+            Fashion That<br>Defines <span class="accent">Your Story</span>
+          </h1>
+          <p class="hero-subtitle">Explore thousands of trendy styles for every occasion. From casual wear to formal collections — dress the way you feel.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#" onclick="showShop('women')">Shop Women →</a>
+            <a class="btn-outline" href="#" onclick="showShop('men')">Shop Men</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><div class="hero-stat-num">500+</div><div class="hero-stat-label">Products</div></div>
+            <div class="hero-stat"><div class="hero-stat-num">50+</div><div class="hero-stat-label">Collections</div></div>
+            <div class="hero-stat"><div class="hero-stat-num">5K+</div><div class="hero-stat-label">Customers</div></div>
+          </div>
+        </div>
+        <div class="hero-images">
+          <div class="hero-img-card">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&q=80" alt="Fashion">
+            <div class="hero-img-badge">Women's Collection</div>
+          </div>
+          <div class="hero-img-card">
+            <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=400&q=80" alt="Men">
+            <div class="hero-img-badge">Men's Collection</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMO STRIP -->
+    <div class="promo-strip">
+      <div class="promo-item">🚚 Free delivery above ₦25,000</div>
+      <div class="promo-item">💳 Easy bank transfer payment</div>
+      <div class="promo-item">🔄 14-day return policy</div>
+      <div class="promo-item">✅ RC: 8148187 Verified Business</div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Shop by <span>Category</span></div>
+          <div class="section-subtitle">Browse our curated collections</div>
+        </div>
+      </div>
+      <div class="category-grid">
+        <a class="cat-card" href="#" onclick="showShop('women')">
+          <img src="https://images.unsplash.com/photo-1551489186-cf8726f514f8?w=400&q=80" alt="Women">
+          <div class="cat-overlay"></div>
+          <div class="cat-label">Women<span class="cat-count">220+ items</span></div>
+        </a>
+        <a class="cat-card" href="#" onclick="showShop('men')">
+          <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=400&q=80" alt="Men">
+          <div class="cat-overlay"></div>
+          <div class="cat-label">Men<span class="cat-count">180+ items</span></div>
+        </a>
+        <a class="cat-card" href="#" onclick="showShop('accessories')">
+          <img src="https://images.unsplash.com/photo-1573408301185-9519f94815b1?w=400&q=80" alt="Accessories">
+          <div class="cat-overlay"></div>
+          <div class="cat-label">Accessories<span class="cat-count">140+ items</span></div>
+        </a>
+        <a class="cat-card" href="#" onclick="showShop('footwear')">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Footwear">
+          <div class="cat-overlay"></div>
+          <div class="cat-label">Footwear<span class="cat-count">100+ items</span></div>
+        </a>
+        <a class="cat-card" href="#" onclick="showShop('bags')">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80" alt="Bags">
+          <div class="cat-overlay"></div>
+          <div class="cat-label">Bags<span class="cat-count">80+ items</span></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- FEATURED WOMEN -->
+    <div class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Trending <span>Women's</span> Picks</div>
+          <div class="section-subtitle">Hot this week</div>
+        </div>
+        <a class="view-all" href="#" onclick="showShop('women')">View All →</a>
+      </div>
+      <div class="product-grid" id="featured-women"></div>
+    </div>
+
+    <!-- BANNER -->
+    <div class="banner-strip">
+      <h2>New Arrivals Every Week</h2>
+      <p>Stay ahead of the fashion curve with our constantly updated collections</p>
+      <a class="btn-primary" href="#" onclick="showShop('all')" style="display:inline-flex">Shop New Arrivals →</a>
+    </div>
+
+    <!-- FEATURED MEN -->
+    <div class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Top <span>Men's</span> Styles</div>
+        </div>
+        <a class="view-all" href="#" onclick="showShop('men')">View All →</a>
+      </div>
+      <div class="product-grid" id="featured-men"></div>
+    </div>
+
+    <!-- ACCESSORIES & FOOTWEAR -->
+    <div class="section">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Accessories & <span>Footwear</span></div>
+        </div>
+        <a class="view-all" href="#" onclick="showShop('accessories')">View All →</a>
+      </div>
+      <div class="product-grid" id="featured-accessories"></div>
+    </div>
+  </div>
+
+  <!-- ======== SHOP PAGE ======== -->
+  <div id="page-shop" class="page">
+    <div class="breadcrumb">
+      <a href="#" onclick="showPage('home')">Home</a>
+      <span>›</span>
+      <span id="shopBreadcrumb">All Products</span>
+    </div>
+    <div class="shop-layout">
+      <!-- FILTER PANEL -->
+      <aside class="filter-panel">
+        <div class="filter-title">🔽 Filters</div>
+        <div class="filter-group">
+          <div class="filter-group-title">Category</div>
+          <label class="filter-option"><input type="radio" name="cat" value="all" checked onchange="applyFilters()"> All Products</label>
+          <label class="filter-option"><input type="radio" name="cat" value="women" onchange="applyFilters()"> Women</label>
+          <label class="filter-option"><input type="radio" name="cat" value="men" onchange="applyFilters()"> Men</label>
+          <label class="filter-option"><input type="radio" name="cat" value="accessories" onchange="applyFilters()"> Accessories</label>
+          <label class="filter-option"><input type="radio" name="cat" value="footwear" onchange="applyFilters()"> Footwear</label>
+          <label class="filter-option"><input type="radio" name="cat" value="bags" onchange="applyFilters()"> Bags</label>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-title">Price Range (₦)</div>
+          <div class="price-range">
+            <input class="price-input" type="number" id="priceMin" placeholder="Min" min="0">
+            <span>–</span>
+            <input class="price-input" type="number" id="priceMax" placeholder="Max">
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-title">Size</div>
+          <label class="filter-option"><input type="checkbox" value="XS" onchange="applyFilters()"> XS</label>
+          <label class="filter-option"><input type="checkbox" value="S" onchange="applyFilters()"> S</label>
+          <label class="filter-option"><input type="checkbox" value="M" onchange="applyFilters()"> M</label>
+          <label class="filter-option"><input type="checkbox" value="L" onchange="applyFilters()"> L</label>
+          <label class="filter-option"><input type="checkbox" value="XL" onchange="applyFilters()"> XL</label>
+          <label class="filter-option"><input type="checkbox" value="2XL" onchange="applyFilters()"> 2XL</label>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-title">Sort By</div>
+          <select id="sortBy" onchange="applyFilters()" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:6px;font-size:13px;">
+            <option value="default">Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="newest">Newest First</option>
+            <option value="popular">Most Popular</option>
+          </select>
+        </div>
+        <button class="apply-filter" onclick="applyFilters()">Apply Filters</button>
+        <button style="width:100%;margin-top:8px;background:none;border:1px solid var(--border);padding:8px;border-radius:6px;cursor:pointer;font-size:13px;" onclick="resetFilters()">Reset Filters</button>
+      </aside>
+      <!-- PRODUCTS -->
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px;">
+          <div style="font-size:14px;color:var(--grey-600);">Showing <strong id="productCount">0</strong> products</div>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span style="font-size:13px;color:var(--grey-500);">Sort:</span>
+            <select id="sortBy2" onchange="applyFilters()" style="border:1px solid var(--border);border-radius:6px;padding:6px 10px;font-size:13px;">
+              <option value="default">Featured</option>
+              <option value="price-low">Price ↑</option>
+              <option value="price-high">Price ↓</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-grid" id="shopGrid"></div>
+        <div id="shopPagination" style="text-align:center;margin-top:40px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== CHECKOUT PAGE ======== -->
+  <div id="page-checkout" class="page">
+    <div class="checkout-page">
+      <h1 style="font-family:var(--font-display);font-size:32px;margin-bottom:8px;">Checkout</h1>
+      <p style="color:var(--grey-500);margin-bottom:32px;">Complete your order below</p>
+      <div class="checkout-grid">
+        <div>
+          <div class="checkout-card">
+            <h3>📍 Delivery Information</h3>
+            <div class="form-row">
+              <div class="form-group"><label>First Name</label><input type="text" id="firstName" placeholder="John"></div>
+              <div class="form-group"><label>Last Name</label><input type="text" id="lastName" placeholder="Doe"></div>
+            </div>
+            <div class="form-group"><label>Email Address</label><input type="email" id="email" placeholder="john@example.com"></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" id="phone" placeholder="+234 800 000 0000"></div>
+            <div class="form-group"><label>Delivery Address</label><textarea id="address" rows="2" placeholder="House number, street name, city"></textarea></div>
+            <div class="form-row">
+              <div class="form-group"><label>State</label>
+                <select id="state">
+                  <option>Delta</option><option>Lagos</option><option>Abuja</option><option>Rivers</option><option>Ogun</option><option>Oyo</option><option>Edo</option><option>Anambra</option><option>Enugu</option><option>Kano</option><option>Kaduna</option><option>Other</option>
+                </select>
+              </div>
+              <div class="form-group"><label>LGA</label><input type="text" id="lga" placeholder="Local Government Area"></div>
+            </div>
+          </div>
+          <div class="checkout-card">
+            <h3>💳 Payment Method</h3>
+            <p style="font-size:13px;color:var(--grey-600);margin-bottom:16px;">We currently accept bank transfer payments. Please transfer to the account below and upload your receipt.</p>
+            <div class="payment-box">
+              <h4>🏦 Bank Transfer Details</h4>
+              <div class="bank-detail"><span class="bank-label">Bank Name</span><span class="bank-value">OPay / Paycom</span></div>
+              <div class="bank-detail">
+                <span class="bank-label">Account Number</span>
+                <span style="display:flex;align-items:center;gap:8px;">
+                  <span class="bank-value" id="accNumDisplay">8080868957</span>
+                  <button class="copy-btn" onclick="copyText('8080868957','Account number')">Copy</button>
+                </span>
+              </div>
+              <div class="bank-detail"><span class="bank-label">Account Name</span><span class="bank-value">Nerogab Clothing Concepts</span></div>
+              <div class="payment-steps">
+                <div style="font-weight:700;font-size:13px;margin-bottom:10px;">How to Pay:</div>
+                <div class="payment-step"><span class="payment-step-num">1</span><span>Complete your order and note your Order ID</span></div>
+                <div class="payment-step"><span class="payment-step-num">2</span><span>Transfer the exact order amount to the account above</span></div>
+                <div class="payment-step"><span class="payment-step-num">3</span><span>Use your Order ID as the transfer description/narration</span></div>
+                <div class="payment-step"><span class="payment-step-num">4</span><span>Take a screenshot of your transfer receipt</span></div>
+                <div class="payment-step"><span class="payment-step-num">5</span><span>Send receipt + Order ID to: <strong>+2348080868957</strong> on WhatsApp</span></div>
+              </div>
+            </div>
+            <div class="form-group" style="margin-top:16px;">
+              <label>Upload Payment Screenshot (Optional)</label>
+              <input type="file" accept="image/*" id="paymentProof" style="border:1px dashed var(--border);padding:12px;cursor:pointer;">
+            </div>
+          </div>
+        </div>
+        <!-- ORDER SUMMARY -->
+        <div>
+          <div class="checkout-card" style="position:sticky;top:84px;">
+            <h3>🛍️ Order Summary</h3>
+            <div id="checkoutItems"></div>
+            <div style="margin-top:16px;">
+              <div class="order-total-row"><span>Subtotal</span><span id="checkoutSubtotal">₦0</span></div>
+              <div class="order-total-row"><span>Delivery</span><span id="checkoutDelivery">₦1,500</span></div>
+              <div class="order-total-row total"><span>Total</span><span id="checkoutTotal">₦0</span></div>
+            </div>
+            <button class="place-order-btn" onclick="placeOrder()">Place Order & Pay →</button>
+            <p style="font-size:11px;color:var(--grey-500);text-align:center;margin-top:8px;">By placing your order, you agree to our Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== ORDER SUCCESS PAGE ======== -->
+  <div id="page-success" class="page">
+    <div class="order-success">
+      <div class="success-icon">🎉</div>
+      <h1 style="font-family:var(--font-display);font-size:32px;margin-bottom:12px;">Order Placed Successfully!</h1>
+      <p style="color:var(--grey-600);margin-bottom:16px;">Thank you for shopping with Nerogab Clothing Concepts</p>
+      <div class="order-id-box" id="successOrderId">#NGC-000000</div>
+      <p style="color:var(--grey-600);font-size:14px;margin-bottom:24px;">Your order ID is shown above. Please use this as your payment reference.</p>
+      <div class="payment-box" style="text-align:left;max-width:500px;margin:0 auto 24px;">
+        <h4>💳 Complete Your Payment</h4>
+        <div class="bank-detail"><span class="bank-label">Bank</span><span class="bank-value">OPay / Paycom</span></div>
+        <div class="bank-detail"><span class="bank-label">Account</span><span class="bank-value">8080868957</span></div>
+        <div class="bank-detail"><span class="bank-label">Name</span><span class="bank-value">Nerogab Clothing Concepts</span></div>
+        <div class="bank-detail"><span class="bank-label">Amount</span><span class="bank-value" id="successAmount">₦0</span></div>
+        <p style="font-size:12px;color:var(--grey-600);margin-top:10px;">Send payment proof to WhatsApp: <strong>+2348080868957</strong></p>
+      </div>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <button class="btn-primary" onclick="showPage('track')">📦 Track Order</button>
+        <button class="btn-outline" onclick="showPage('home')" style="color:var(--black);border-color:var(--border);">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== ORDER TRACKING PAGE ======== -->
+  <div id="page-track" class="page">
+    <div class="tracking-page">
+      <h1 style="font-family:var(--font-display);font-size:28px;margin-bottom:8px;">📦 Track Your Order</h1>
+      <p style="color:var(--grey-500);margin-bottom:32px;">Enter your order ID to check your delivery status</p>
+      <div style="display:flex;gap:12px;margin-bottom:32px;flex-wrap:wrap;">
+        <input type="text" id="trackInput" placeholder="Enter Order ID e.g. #NGC-123456" style="flex:1;border:1.5px solid var(--border);border-radius:8px;padding:12px 16px;font-size:14px;min-width:200px;outline:none;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'">
+        <button class="btn-primary" onclick="trackOrder()">Track Order</button>
+      </div>
+      <div id="trackResult"></div>
+      <div id="allOrders">
+        <h3 style="font-family:var(--font-display);margin-bottom:16px;">Recent Orders</h3>
+        <div id="ordersList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== ABOUT PAGE ======== -->
+  <div id="page-about" class="page">
+    <div class="about-hero">
+      <h1>About Nerogab Clothing Concepts</h1>
+      <p>Bringing affordable, trendy fashion to Nigeria — one outfit at a time</p>
+    </div>
+    <div class="about-content">
+      <div class="about-grid">
+        <div>
+          <h2 style="font-family:var(--font-display);font-size:28px;margin-bottom:16px;">Our <span class="red">Story</span></h2>
+          <p style="font-size:15px;line-height:1.8;color:var(--grey-700);margin-bottom:16px;">Nerogab Clothing Concepts was founded with a simple mission: to make stylish, high-quality fashion accessible to everyone in Nigeria. Based in Agbarha Otor, Delta State, we serve customers nationwide with carefully curated clothing collections for women, men, and children.</p>
+          <p style="font-size:15px;line-height:1.8;color:var(--grey-700);margin-bottom:16px;">We believe fashion should empower and inspire. Every piece in our collection is selected to offer excellent value — bringing you the latest global trends at prices that make sense for the Nigerian market.</p>
+          <p style="font-size:15px;line-height:1.8;color:var(--grey-700);">From casual everyday wear to special occasion outfits, we stock hundreds of styles across women's fashion, men's wear, accessories, footwear, and bags.</p>
+        </div>
+        <div>
+          <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=600&q=80" alt="Fashion Store">
+          </div>
+        </div>
+      </div>
+      <div class="reg-card">
+        <h3>🏢 Business Registration Details</h3>
+        <div class="reg-row"><span class="reg-label">Business Name</span><span class="reg-val">Nerogab Clothing Concepts</span></div>
+        <div class="reg-row"><span class="reg-label">RC Number</span><span class="reg-val">RC: 8148187</span></div>
+        <div class="reg-row"><span class="reg-label">Business Address</span><span class="reg-val">First Ovie Street, Agbarha Otor, Delta State, Nigeria</span></div>
+        <div class="reg-row"><span class="reg-label">Contact Number</span><span class="reg-val">+234 808 086 8957</span></div>
+        <div class="reg-row"><span class="reg-label">Email</span><span class="reg-val">nerogabclothingconcept@gmail.com</span></div>
+        <div class="reg-row"><span class="reg-label">Bank / Payment</span><span class="reg-val">OPay/Paycom — 8080868957</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;" id="aboutStats">
+        <div style="text-align:center;background:var(--grey-100);border-radius:var(--radius);padding:24px;">
+          <div style="font-family:var(--font-display);font-size:36px;color:var(--primary);font-weight:700;">500+</div>
+          <div style="font-size:14px;color:var(--grey-600);margin-top:4px;">Products Available</div>
+        </div>
+        <div style="text-align:center;background:var(--grey-100);border-radius:var(--radius);padding:24px;">
+          <div style="font-family:var(--font-display);font-size:36px;color:var(--primary);font-weight:700;">5K+</div>
+          <div style="font-size:14px;color:var(--grey-600);margin-top:4px;">Happy Customers</div>
+        </div>
+        <div style="text-align:center;background:var(--grey-100);border-radius:var(--radius);padding:24px;">
+          <div style="font-family:var(--font-display);font-size:36px;color:var(--primary);font-weight:700;">36</div>
+          <div style="font-size:14px;color:var(--grey-600);margin-top:4px;">States Delivered</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== CONTACT PAGE ======== -->
+  <div id="page-contact" class="page">
+    <div style="background:linear-gradient(135deg,#0d0d0d,#2d0a16);padding:60px 20px;text-align:center;color:#fff;">
+      <h1 style="font-family:var(--font-display);font-size:clamp(28px,4vw,48px);margin-bottom:8px;">Contact Us</h1>
+      <p style="opacity:0.7;">We're here to help. Reach out anytime.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <h2 style="font-family:var(--font-display);font-size:24px;margin-bottom:20px;">Get in <span class="red">Touch</span></h2>
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div><strong>Address</strong><br><span style="color:var(--grey-600);font-size:14px;">First Ovie Street, Agbarha Otor, Delta State, Nigeria</span></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📞</div>
+          <div><strong>Phone / WhatsApp</strong><br><a href="tel:+2348080868957" style="color:var(--primary);font-size:14px;">+234 808 086 8957</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">✉️</div>
+          <div><strong>Email</strong><br><a href="mailto:nerogabclothingconcept@gmail.com" style="color:var(--primary);font-size:14px;">nerogabclothingconcept@gmail.com</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">🕒</div>
+          <div><strong>Business Hours</strong><br><span style="color:var(--grey-600);font-size:14px;">Mon–Sat: 8am – 8pm<br>Sunday: 10am – 6pm</span></div>
+        </div>
+      </div>
+      <div>
+        <h2 style="font-family:var(--font-display);font-size:24px;margin-bottom:20px;">Send a <span class="red">Message</span></h2>
+        <div class="form-group"><label>Name</label><input type="text" placeholder="Your full name"></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+        <div class="form-group"><label>Subject</label><input type="text" placeholder="How can we help?"></div>
+        <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Write your message here..."></textarea></div>
+        <button class="btn-primary" onclick="showToast('Message sent! We\'ll reply within 24 hours. 📧')">Send Message →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== LEGAL PAGES ======== -->
+  <div id="page-privacy" class="page">
+    <div class="legal-page">
+      <h1>Privacy Policy</h1>
+      <div class="last-updated">Last updated: January 2025 | Nerogab Clothing Concepts (RC: 8148187)</div>
+      <h2>1. Information We Collect</h2>
+      <p>Nerogab Clothing Concepts collects personal information when you place an order, including your name, delivery address, phone number, and email address. We use this information solely to process and deliver your orders.</p>
+      <h2>2. How We Use Your Information</h2>
+      <ul><li>To process and fulfil your orders</li><li>To send you order confirmations and delivery updates</li><li>To respond to customer service inquiries</li><li>To improve our products and services</li></ul>
+      <h2>3. Data Security</h2>
+      <p>We take reasonable steps to protect your personal information. Your payment details are processed via bank transfer and we do not store sensitive financial data on our systems.</p>
+      <h2>4. Sharing Your Information</h2>
+      <p>We do not sell, trade, or rent your personal information to third parties. We may share data with delivery partners solely for the purpose of delivering your orders.</p>
+      <h2>5. Contact</h2>
+      <p>For privacy concerns, contact us at nerogabclothingconcept@gmail.com or call +2348080868957.</p>
+      <p>Operated by: Nerogab Clothing Concepts (RC: 8148187), First Ovie Street, Agbarha Otor, Delta State.</p>
+    </div>
+  </div>
+
+  <div id="page-terms" class="page">
+    <div class="legal-page">
+      <h1>Terms & Conditions</h1>
+      <div class="last-updated">Last updated: January 2025 | Nerogab Clothing Concepts (RC: 8148187)</div>
+      <h2>1. Acceptance of Terms</h2>
+      <p>By using this website and placing orders with Nerogab Clothing Concepts, you accept these terms and conditions in full.</p>
+      <h2>2. Orders and Payment</h2>
+      <p>All orders are subject to availability. Prices are listed in Nigerian Naira (₦). Payment is made via bank transfer to OPay/Paycom — Account Number: 8080868957 (Nerogab Clothing Concepts). Orders are confirmed only after payment verification.</p>
+      <h2>3. Delivery</h2>
+      <p>Delivery timelines are 2–7 working days depending on your location. Nerogab Clothing Concepts is not responsible for delays caused by third-party logistics providers.</p>
+      <h2>4. Product Accuracy</h2>
+      <p>We make every effort to accurately display product colors and sizes. Minor variations may occur due to screen settings or manufacturing differences.</p>
+      <h2>5. Liability</h2>
+      <p>Nerogab Clothing Concepts shall not be liable for indirect, incidental, or consequential damages arising from the use of this website or products purchased.</p>
+      <h2>6. Governing Law</h2>
+      <p>These terms are governed by the laws of the Federal Republic of Nigeria.</p>
+      <p>Operated by: Nerogab Clothing Concepts (RC: 8148187)</p>
+    </div>
+  </div>
+
+  <div id="page-refund" class="page">
+    <div class="legal-page">
+      <h1>Refund & Return Policy</h1>
+      <div class="last-updated">Last updated: January 2025 | Nerogab Clothing Concepts (RC: 8148187)</div>
+      <h2>Our Policy</h2>
+      <p>We want you to be completely satisfied with your purchase. If for any reason you are not happy with your order, we offer a 14-day return/exchange policy.</p>
+      <h2>Eligible Returns</h2>
+      <ul><li>Items must be returned within 14 days of delivery</li><li>Items must be unworn, unwashed, and in original condition</li><li>Items must have original tags attached</li><li>Sale items are eligible for exchange only, not refunds</li></ul>
+      <h2>Non-Returnable Items</h2>
+      <ul><li>Underwear and swimwear for hygiene reasons</li><li>Items marked as "Final Sale"</li><li>Customised or personalised items</li></ul>
+      <h2>How to Return</h2>
+      <div class="payment-steps" style="background:var(--grey-100);border-radius:8px;padding:16px;">
+        <div class="payment-step"><span class="payment-step-num">1</span><span>Contact us via WhatsApp (+2348080868957) or email within 14 days</span></div>
+        <div class="payment-step"><span class="payment-step-num">2</span><span>Provide your order ID and photos of the item</span></div>
+        <div class="payment-step"><span class="payment-step-num">3</span><span>Wait for our confirmation and return instructions</span></div>
+        <div class="payment-step"><span class="payment-step-num">4</span><span>Ship the item to our address (buyer pays return shipping)</span></div>
+        <div class="payment-step"><span class="payment-step-num">5</span><span>Receive your refund or exchange within 5–7 working days</span></div>
+      </div>
+      <h2>Refund Method</h2>
+      <p>Refunds are processed back to the original payment method or via bank transfer to your account within 5–7 working days of receiving the returned item.</p>
+    </div>
+  </div>
+
+  <!-- ======== ADMIN PAGE ======== -->
+  <div id="page-admin" class="page">
+    <div class="admin-page">
+      <div class="admin-header">
+        <h1 style="font-family:var(--font-display);font-size:28px;">⚙️ Admin Panel</h1>
+        <div style="font-size:13px;color:var(--grey-500);">Nerogab Clothing Concepts — Order Management</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px;" id="adminStats"></div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+        <div style="padding:16px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+          <h3 style="font-size:16px;font-weight:700;">All Orders</h3>
+          <input type="text" placeholder="Search order ID..." style="border:1px solid var(--border);border-radius:6px;padding:6px 12px;font-size:13px;outline:none;" oninput="filterAdminOrders(this.value)">
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="admin-table" id="adminOrderTable">
+            <thead><tr><th>Order ID</th><th>Customer</th><th>Items</th><th>Amount</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
+            <tbody id="adminOrderBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end pageContainer -->
+
+<!-- SEARCH RESULTS OVERLAY -->
+<div id="searchResultsPage" class="page" style="display:none;position:fixed;inset:0;background:#fff;z-index:900;overflow-y:auto;padding:80px 20px 20px;">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+      <button onclick="closeSearch()" style="background:none;border:none;font-size:24px;cursor:pointer;padding:8px;">✕</button>
+      <h2 style="font-family:var(--font-display);font-size:24px;">Search Results for "<span id="searchQuery"></span>"</h2>
+    </div>
+    <div class="product-grid" id="searchGrid"></div>
+  </div>
+</div>
+
+<!-- CART PANEL -->
+<div class="overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-panel" id="cartPanel">
+  <div class="cart-header">
+    <h2>🛍️ My Cart (<span id="cartItemCount">0</span>)</h2>
+    <button class="cart-close" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"><div class="cart-empty"><div class="empty-icon">🛒</div><p>Your cart is empty</p><button class="btn-primary" onclick="toggleCart();showShop('all')" style="margin-top:16px;">Start Shopping</button></div></div>
+  <div class="cart-footer" id="cartFooter" style="display:none;">
+    <div class="cart-subtotal"><span>Subtotal</span><span id="cartSubtotal">₦0</span></div>
+    <button class="checkout-btn" onclick="toggleCart();goToCheckout()">Proceed to Checkout →</button>
+  </div>
+</div>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div class="product-modal" id="productModal">
+  <div class="product-modal-bg" onclick="closeModal()"></div>
+  <div class="product-modal-inner">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-img-section"><img src="" id="modalImg" alt="Product"></div>
+    <div class="modal-info">
+      <div class="modal-category" id="modalCategory"></div>
+      <div class="modal-name" id="modalName"></div>
+      <div class="modal-price-row">
+        <span class="modal-price" id="modalPrice"></span>
+        <span class="modal-original" id="modalOriginal"></span>
+        <span class="modal-badge" id="modalBadge"></span>
+      </div>
+      <div class="product-rating">
+        <span class="stars" id="modalStars">★★★★★</span>
+        <span class="review-count" id="modalReviews"></span>
+      </div>
+      <div class="modal-section-label">Select Size</div>
+      <div class="size-options" id="modalSizes"></div>
+      <div class="modal-section-label">Color</div>
+      <div class="color-options" id="modalColors"></div>
+      <div class="modal-section-label">Description</div>
+      <div class="modal-desc" id="modalDesc"></div>
+      <div style="display:flex;align-items:center;gap:12px;margin-top:20px;">
+        <div class="qty-control">
+          <button class="qty-btn" onclick="changeModalQty(-1)">-</button>
+          <input class="qty-val" type="text" value="1" id="modalQty" readonly>
+          <button class="qty-btn" onclick="changeModalQty(1)">+</button>
+        </div>
+        <button class="modal-add-btn" id="modalAddBtn" onclick="addToCartFromModal()" style="flex:1;">🛒 Add to Cart</button>
+      </div>
+      <div class="shipping-info">🚚 <span>Free delivery on orders above ₦25,000. Delivery within 2–7 days.</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav">
+  <div class="mobile-nav-inner">
+    <button class="mobile-nav-item" onclick="showPage('home')"><span class="nav-icon">🏠</span>Home</button>
+    <button class="mobile-nav-item" onclick="showShop('all')"><span class="nav-icon">👗</span>Shop</button>
+    <button class="mobile-nav-item" onclick="showShop('women')"><span class="nav-icon">👩</span>Women</button>
+    <button class="mobile-nav-item" onclick="showShop('men')"><span class="nav-icon">👔</span>Men</button>
+    <button class="mobile-nav-item" onclick="toggleCart()" style="position:relative;"><span class="nav-icon">🛒</span>Cart</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"><span class="toast-icon">✅</span><span id="toastMsg">Item added to cart!</span></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="#" onclick="showPage('home')">Nero<span style="color:var(--gold)">gab</span></a>
+      <p>Trendy, affordable fashion for every occasion. Serving Nigeria with quality clothing and accessories.</p>
+      <div style="margin-top:12px;font-size:12px;color:#666;">
+        📍 First Ovie Street, Agbarha Otor, Delta State<br>
+        📞 +234 808 086 8957<br>
+        ✉️ nerogabclothingconcept@gmail.com
+      </div>
+      <div class="footer-social">
+        <a class="social-btn" href="#">📘</a>
+        <a class="social-btn" href="#">📸</a>
+        <a class="social-btn" href="#">🐦</a>
+        <a class="social-btn" href="#">▶️</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#" onclick="showShop('women')">Women's Fashion</a>
+      <a href="#" onclick="showShop('men')">Men's Fashion</a>
+      <a href="#" onclick="showShop('accessories')">Accessories</a>
+      <a href="#" onclick="showShop('footwear')">Footwear</a>
+      <a href="#" onclick="showShop('bags')">Bags & Purses</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#" onclick="showPage('about')">About Us</a>
+      <a href="#" onclick="showPage('contact')">Contact Us</a>
+      <a href="#" onclick="showPage('track')">Track Order</a>
+      <a href="#" onclick="showPage('privacy')">Privacy Policy</a>
+      <a href="#" onclick="showPage('terms')">Terms & Conditions</a>
+      <a href="#" onclick="showPage('refund')">Refund Policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Payment</h4>
+      <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:16px;">
+        <div style="color:#bbb;font-size:12px;margin-bottom:10px;">Bank Transfer</div>
+        <div style="color:#fff;font-weight:700;font-size:14px;margin-bottom:4px;">OPay / Paycom</div>
+        <div style="color:#aaa;font-size:12px;margin-bottom:2px;">8080868957</div>
+        <div style="color:#aaa;font-size:12px;">Nerogab Clothing Concepts</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2025 Nerogab Clothing Concepts. All rights reserved.</div>
+    <div class="footer-rc">Operated by Nerogab Clothing Concepts (RC: 8148187) — First Ovie Street, Agbarha Otor, Delta State, Nigeria</div>
+  </div>
+</footer>
+
+<script>
+// ===================== DATA =====================
+const PRODUCTS = [
+  // WOMEN - Dresses
+  {id:1,name:"Floral Wrap Midi Dress",cat:"women",sub:"dresses",img:"https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&q=80",price:8500,original:14000,colors:["#f9e4b7","#d4a5a5","#9ab8c2"],sizes:["XS","S","M","L","XL"],rating:4.8,reviews:2341,desc:"Elegant floral wrap midi dress with V-neckline. Made from lightweight chiffon fabric. Perfect for weddings, parties, and dates. Features adjustable tie waist for a flattering fit.",badge:"HOT"},
+  {id:2,name:"Bodycon Party Dress",cat:"women",sub:"dresses",img:"https://images.unsplash.com/photo-1562137369-1a1a0bc66744?w=400&q=80",price:6200,original:11000,colors:["#000","#c8102e","#1a1a6e"],sizes:["XS","S","M","L"],rating:4.7,reviews:1892,desc:"Stunning bodycon mini dress with ruched detailing. Stretchy fabric hugs your curves perfectly. Ideal for clubbing and parties.",badge:"SALE"},
+  {id:3,name:"Summer Boho Maxi Dress",cat:"women",sub:"dresses",img:"https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&q=80",price:9800,original:16500,colors:["#f2c882","#c8d8a8","#e8b4b8"],sizes:["S","M","L","XL","2XL"],rating:4.9,reviews:3102,desc:"Breezy bohemian maxi dress with flowy silhouette. Features adjustable spaghetti straps and elastic waist. Perfect for beach holidays and summer outings.",badge:"NEW"},
+  {id:4,name:"Elegant Lace Evening Gown",cat:"women",sub:"dresses",img:"https://images.unsplash.com/photo-1566479179817-c4e31a4a5c57?w=400&q=80",price:15500,original:25000,colors:["#fff","#000","#c8102e","#1a1a6e"],sizes:["XS","S","M","L","XL"],rating:4.9,reviews:891,desc:"Luxurious lace evening gown with sweetheart neckline. Features a floor-length skirt with subtle train. Perfect for formal events, galas, and black tie affairs.",badge:"HOT"},
+  {id:5,name:"Off-Shoulder Peplum Dress",cat:"women",sub:"dresses",img:"https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&q=80",price:7200,original:12000,colors:["#f9a8d4","#93c5fd","#fde68a"],sizes:["XS","S","M","L"],rating:4.6,reviews:1456,desc:"Chic off-shoulder peplum dress. The ruffled peplum adds volume to your waistline creating an hourglass silhouette. Made from satin-blend fabric.",badge:"NEW"},
+  {id:6,name:"Casual T-Shirt Dress",cat:"women",sub:"dresses",img:"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&q=80",price:4500,original:7500,colors:["#fff","#e5e5e5","#000","#c8102e"],sizes:["S","M","L","XL","2XL"],rating:4.5,reviews:2890,desc:"Comfortable oversized T-shirt dress in soft cotton jersey. Relaxed fit with short sleeves. Great for everyday casual wear.",badge:""},
+
+  // WOMEN - Tops
+  {id:7,name:"Cropped Halter Top",cat:"women",sub:"tops",img:"https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&q=80",price:3200,original:5500,colors:["#000","#fff","#c8102e","#fde68a"],sizes:["XS","S","M","L"],rating:4.7,reviews:3241,desc:"Trendy cropped halter neck top in ribbed fabric. Self-tie back neck for adjustable fit. Perfect with high-waisted jeans or skirts.",badge:"HOT"},
+  {id:8,name:"Silk Ruffle Blouse",cat:"women",sub:"tops",img:"https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&q=80",price:5800,original:9500,colors:["#fff","#fde68a","#c8d8a8","#f9a8d4"],sizes:["XS","S","M","L","XL"],rating:4.8,reviews:1234,desc:"Feminine ruffle-front blouse in lightweight satin material. V-neckline with delicate ruffle trims. Tuck into trousers for an elegant look.",badge:""},
+  {id:9,name:"Graphic Print Oversized Tee",cat:"women",sub:"tops",img:"https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&q=80",price:2800,original:4800,colors:["#fff","#e5e5e5","#000"],sizes:["S","M","L","XL","2XL"],rating:4.5,reviews:5621,desc:"Fun graphic oversized tee in soft 100% cotton. Drop-shoulder fit with crew neck. Express your personality with bold artwork prints.",badge:"SALE"},
+  {id:10,name:"Strapless Corset Bustier Top",cat:"women",sub:"tops",img:"https://images.unsplash.com/photo-1581044777550-4cfa9a07a2df?w=400&q=80",price:4200,original:7200,colors:["#000","#fff","#c8102e"],sizes:["XS","S","M","L"],rating:4.6,reviews:987,desc:"Structured boning corset bustier with sweetheart neckline. Invisible zip back closure. Pair with trousers or a skirt for a striking look.",badge:"HOT"},
+
+  // WOMEN - Bottoms
+  {id:11,name:"High-Waist Flared Trousers",cat:"women",sub:"bottoms",img:"https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&q=80",price:6900,original:11500,colors:["#000","#1a1a6e","#c8a86b"],sizes:["XS","S","M","L","XL"],rating:4.7,reviews:2134,desc:"Retro-inspired high-waist flared trousers. Wide-leg silhouette elongates your legs. Features side pockets and belt loops.",badge:""},
+  {id:12,name:"Pleated Mini Skirt",cat:"women",sub:"bottoms",img:"https://images.unsplash.com/photo-1594938298603-c8148c4b4d40?w=400&q=80",price:3800,original:6200,colors:["#c8102e","#000","#fde68a","#93c5fd"],sizes:["XS","S","M","L","XL"],rating:4.8,reviews:4321,desc:"Cute pleated tennis mini skirt with elastic waistband. Lightweight material with subtle sheen. School-girl aesthetic meets modern style.",badge:"HOT"},
+  {id:13,name:"Cargo Wide-Leg Pants",cat:"women",sub:"bottoms",img:"https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&q=80",price:7500,original:12800,colors:["#8a9a6b","#c8a86b","#000","#e5e5e5"],sizes:["XS","S","M","L","XL","2XL"],rating:4.6,reviews:1876,desc:"Trendy cargo pants with wide-leg cut. Multiple utility pockets. Made from sturdy cotton-blend canvas. Relaxed fit for all-day comfort.",badge:"NEW"},
+
+  // WOMEN - Outerwear
+  {id:14,name:"Oversized Blazer Coat",cat:"women",sub:"outerwear",img:"https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=400&q=80",price:12500,original:20000,colors:["#000","#c8a86b","#e5e5e5"],sizes:["XS","S","M","L","XL"],rating:4.9,reviews:1567,desc:"Power-dressing oversized blazer with structured shoulders. Single-button closure with notched lapels. Made from high-quality suiting fabric.",badge:"HOT"},
+  {id:15,name:"Faux Leather Biker Jacket",cat:"women",sub:"outerwear",img:"https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&q=80",price:11800,original:19500,colors:["#000","#8b4513","#c8102e"],sizes:["XS","S","M","L","XL"],rating:4.7,reviews:2231,desc:"Edgy faux leather biker jacket with asymmetric zip. Features moto-inspired details including buckled straps and zippered pockets.",badge:""},
+  {id:16,name:"Trench Coat Classic",cat:"women",sub:"outerwear",img:"https://images.unsplash.com/photo-1544441893-675973e31985?w=400&q=80",price:18000,original:30000,colors:["#c8a86b","#000","#e5e5e5"],sizes:["XS","S","M","L","XL"],rating:4.9,reviews:892,desc:"Timeless double-breasted trench coat with storm flap and belted waist. Water-resistant cotton gabardine. The ultimate wardrobe investment.",badge:"NEW"},
+
+  // MEN
+  {id:17,name:"Slim Fit Oxford Shirt",cat:"men",sub:"shirts",img:"https://images.unsplash.com/photo-1602810316498-ab67cf68c8e1?w=400&q=80",price:5200,original:8800,colors:["#fff","#93c5fd","#c8d8a8","#fde68a"],sizes:["S","M","L","XL","2XL"],rating:4.7,reviews:3456,desc:"Classic slim-fit Oxford button-down shirt. Made from premium cotton with subtle texture. Single breast pocket with button-down collar.",badge:""},
+  {id:18,name:"Graphic Street Tee",cat:"men",sub:"tshirts",img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&q=80",price:2900,original:5000,colors:["#000","#fff","#c8102e","#1a1a6e"],sizes:["S","M","L","XL","2XL","3XL"],rating:4.5,reviews:6789,desc:"Bold graphic tee with street-art inspired print. 100% heavyweight cotton for long-lasting wear. Regular fit with ribbed crew neck.",badge:"HOT"},
+  {id:19,name:"Skinny Stretch Jeans",cat:"men",sub:"jeans",img:"https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&q=80",price:8200,original:13500,colors:["#1a1a6e","#000","#6b8e9f"],sizes:["28","30","32","34","36","38"],rating:4.6,reviews:4521,desc:"Modern skinny jeans with stretch fabric for comfort and flexibility. Mid-rise with five-pocket design. Tapered leg with clean hem.",badge:""},
+  {id:20,name:"Chino Slim Pants",cat:"men",sub:"pants",img:"https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400&q=80",price:6800,original:11000,colors:["#c8a86b","#8a9a6b","#000","#1a1a6e"],sizes:["28","30","32","34","36","38"],rating:4.7,reviews:2876,desc:"Smart casual chino trousers in slim-fit cut. Premium cotton-stretch fabric. Perfect for office and casual outings. Side and back pockets.",badge:""},
+  {id:21,name:"Polo Shirt Classic",cat:"men",sub:"shirts",img:"https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&q=80",price:4200,original:7000,colors:["#fff","#000","#c8102e","#1a1a6e","#93c5fd"],sizes:["S","M","L","XL","2XL"],rating:4.8,reviews:5432,desc:"Classic pique cotton polo shirt. Three-button placket with ribbed collar and cuffs. Regular fit for effortless everyday style.",badge:"NEW"},
+  {id:22,name:"Linen Summer Shirt",cat:"men",sub:"shirts",img:"https://images.unsplash.com/photo-1617137968427-85924c800a22?w=400&q=80",price:5900,original:9500,colors:["#fff","#c8a86b","#c8d8a8","#93c5fd"],sizes:["S","M","L","XL","2XL"],rating:4.7,reviews:1987,desc:"Breathable linen short-sleeve shirt perfect for warm weather. Relaxed fit with chest pocket. Made from 100% natural linen.",badge:""},
+  {id:23,name:"Jogger Sweatpants",cat:"men",sub:"pants",img:"https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&q=80",price:5500,original:9200,colors:["#e5e5e5","#000","#c8102e","#1a1a6e"],sizes:["S","M","L","XL","2XL"],rating:4.6,reviews:3210,desc:"Comfortable cotton fleece jogger pants with elastic waistband and drawstring. Tapered leg with ribbed cuffs. Side and back pockets.",badge:""},
+  {id:24,name:"Puffer Jacket Quilted",cat:"men",sub:"jackets",img:"https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&q=80",price:13500,original:22000,colors:["#000","#1a1a6e","#c8102e","#8a9a6b"],sizes:["S","M","L","XL","2XL"],rating:4.8,reviews:1234,desc:"Warm quilted puffer jacket with lightweight insulation. Zip-up front with stand collar. Side pockets with zip closure. Water-resistant exterior.",badge:"HOT"},
+  {id:25,name:"Denim Jacket Classic",cat:"men",sub:"jackets",img:"https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&q=80",price:9800,original:16000,colors:["#1a1a6e","#000","#6b8e9f"],sizes:["S","M","L","XL","2XL"],rating:4.7,reviews:2341,desc:"Iconic denim trucker jacket with classic fit. Button-up front with chest flap pockets. Made from quality stonewashed denim.",badge:""},
+  {id:26,name:"Formal Suit Blazer",cat:"men",sub:"suits",img:"https://images.unsplash.com/photo-1593032465175-481ac7f401a0?w=400&q=80",price:18500,original:30000,colors:["#000","#1a1a6e","#6b6b6b"],sizes:["S","M","L","XL","2XL"],rating:4.9,reviews:678,desc:"Sharp tailored blazer for formal occasions. Slim-fit cut with single-button closure. Notched lapels with breast and side pockets.",badge:"NEW"},
+  {id:27,name:"Hoodie Pullover",cat:"men",sub:"hoodies",img:"https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=400&q=80",price:6200,original:10500,colors:["#000","#e5e5e5","#c8102e","#1a1a6e","#8a9a6b"],sizes:["S","M","L","XL","2XL","3XL"],rating:4.7,reviews:7654,desc:"Classic pullover hoodie with kangaroo pocket and drawstring hood. Heavyweight 300gsm cotton-fleece blend. Cozy and stylish.",badge:""},
+  {id:28,name:"Ankara Print Shirt",cat:"men",sub:"shirts",img:"https://images.unsplash.com/photo-1523380677598-64d85d9c75c8?w=400&q=80",price:7800,original:13000,colors:["#f2c882","#c8102e","#1a1a6e"],sizes:["S","M","L","XL","2XL"],rating:4.8,reviews:3421,desc:"Vibrant African Ankara print short-sleeve shirt. Comfortable cotton fabric with bold wax print patterns. Regular fit collar shirt.",badge:"HOT"},
+
+  // ACCESSORIES
+  {id:29,name:"Gold Statement Necklace",cat:"accessories",sub:"jewellery",img:"https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80",price:3500,original:6000,colors:["#d4a843"],sizes:["One Size"],rating:4.8,reviews:2345,desc:"Bold gold-plated layered statement necklace. Features multiple chain layers with pendant details. Tarnish-resistant plating. Lobster clasp closure.",badge:"HOT"},
+  {id:30,name:"Pearl Drop Earrings",cat:"accessories",sub:"jewellery",img:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80",price:2200,original:3800,colors:["#fff","#f9e4b7"],sizes:["One Size"],rating:4.9,reviews:3210,desc:"Elegant freshwater pearl drop earrings set in gold-tone setting. Post back for pierced ears. Hypoallergenic and nickel-free.",badge:""},
+  {id:31,name:"Leather Belt Classic",cat:"accessories",sub:"belts",img:"https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=400&q=80",price:4500,original:7500,colors:["#000","#8b4513","#c8a86b"],sizes:["S","M","L","XL"],rating:4.7,reviews:1876,desc:"Classic PU leather belt with silver-tone buckle. 3.5cm width. Available in multiple sizes. Suitable for both men and women.",badge:""},
+  {id:32,name:"Silk Hair Scrunchies Set",cat:"accessories",sub:"hair",img:"https://images.unsplash.com/photo-1583241475880-083f84372725?w=400&q=80",price:1800,original:3200,colors:["#f9a8d4","#93c5fd","#fde68a","#c8d8a8"],sizes:["One Size"],rating:4.6,reviews:8765,desc:"Luxury satin silk scrunchies set of 6 pieces. Gentle on hair, prevents breakage. Multiple colors included. Suitable for all hair types.",badge:"SALE"},
+  {id:33,name:"Sunglasses Cat Eye",cat:"accessories",sub:"sunglasses",img:"https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&q=80",price:3800,original:6500,colors:["#000","#8b4513","#c8102e"],sizes:["One Size"],rating:4.7,reviews:2109,desc:"Retro cat-eye sunglasses with UV400 protection lenses. Lightweight acetate frame. Comes with protective case and cleaning cloth.",badge:""},
+  {id:34,name:"Beaded Bracelet Set",cat:"accessories",sub:"jewellery",img:"https://images.unsplash.com/photo-1573408301185-9519f94815b1?w=400&q=80",price:2500,original:4500,colors:["#d4a843","#fff","#f9a8d4"],sizes:["One Size"],rating:4.5,reviews:4321,desc:"Stack of 5 handmade beaded bracelets. Mix of natural stone beads and glass beads. Adjustable sliding knot closure. Bohemian style.",badge:"NEW"},
+  {id:35,name:"Woolen Beanie Hat",cat:"accessories",sub:"hats",img:"https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=400&q=80",price:2800,original:4800,colors:["#000","#c8102e","#1a1a6e","#8a9a6b","#e5e5e5"],sizes:["One Size"],rating:4.6,reviews:3456,desc:"Warm ribbed knit beanie hat with turn-up cuff. Made from soft acrylic wool blend. Stretchy for a comfortable fit.",badge:""},
+  {id:36,name:"Silk Scarf Floral",cat:"accessories",sub:"scarves",img:"https://images.unsplash.com/photo-1594938298603-c8148c4b4d40?w=400&q=80",price:4200,original:7200,colors:["#f2c882","#f9a8d4","#93c5fd"],sizes:["One Size"],rating:4.8,reviews:1987,desc:"Luxurious printed silk scarf 90x90cm. Features a vibrant floral print on a light background. Can be worn as headscarf, neck tie, or bag accessory.",badge:""},
+  {id:37,name:"Baseball Cap Snapback",cat:"accessories",sub:"hats",img:"https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400&q=80",price:3200,original:5500,colors:["#000","#fff","#c8102e","#1a1a6e"],sizes:["One Size"],rating:4.5,reviews:5432,desc:"Classic embroidered snapback baseball cap. Adjustable snap closure for universal fit. Structured six-panel design with curved brim.",badge:""},
+  {id:38,name:"Ring Set Gold Stackable",cat:"accessories",sub:"jewellery",img:"https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=400&q=80",price:2800,original:4800,colors:["#d4a843","#c0c0c0"],sizes:["5","6","7","8","9"],rating:4.7,reviews:6543,desc:"Set of 5 minimalist gold-plated stackable rings. Mix of plain bands and stone-set designs. Tarnish-resistant. Perfect for layering.",badge:"HOT"},
+
+  // FOOTWEAR
+  {id:39,name:"Chunky Platform Sneakers",cat:"footwear",sub:"sneakers",img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",price:12500,original:20000,colors:["#fff","#000","#f9a8d4"],sizes:["36","37","38","39","40","41","42"],rating:4.8,reviews:3456,desc:"Trendy chunky platform sneakers with thick rubber sole. Lace-up front with padded collar. Mixed material upper with logo branding.",badge:"HOT"},
+  {id:40,name:"Block Heel Ankle Boots",cat:"footwear",sub:"boots",img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&q=80",price:14800,original:24000,colors:["#000","#8b4513","#c8a86b"],sizes:["36","37","38","39","40","41"],rating:4.7,reviews:2109,desc:"Chic ankle boots with comfortable block heel. Side zip for easy wear. Faux suede upper with cushioned insole.",badge:""},
+  {id:41,name:"Strappy Heeled Sandals",cat:"footwear",sub:"heels",img:"https://images.unsplash.com/photo-1596703263926-422f7e739f36?w=400&q=80",price:9500,original:16000,colors:["#000","#c8a86b","#f9a8d4","#d4a843"],sizes:["35","36","37","38","39","40"],rating:4.6,reviews:1876,desc:"Elegant strappy high-heel sandals with thin stiletto heel. Open toe with adjustable ankle strap. Perfect for evening events and weddings.",badge:""},
+  {id:42,name:"White Chunky Loafers",cat:"footwear",sub:"loafers",img:"https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=400&q=80",price:11200,original:18500,colors:["#fff","#000","#c8a86b"],sizes:["36","37","38","39","40","41","42"],rating:4.8,reviews:4321,desc:"Trendy platform loafers with horse-bit detail. Slip-on style with padded insole for all-day comfort. Timeless design with a modern twist.",badge:"NEW"},
+  {id:43,name:"Running Sneakers Pro",cat:"footwear",sub:"sneakers",img:"https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&q=80",price:16500,original:27000,colors:["#000","#fff","#c8102e","#1a1a6e"],sizes:["38","39","40","41","42","43","44","45"],rating:4.8,reviews:5678,desc:"High-performance running sneakers with responsive cushioning. Breathable mesh upper with support zones. Durable rubber outsole with grip pattern.",badge:"HOT"},
+  {id:44,name:"Open Toe Mules Slip-On",cat:"footwear",sub:"mules",img:"https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&q=80",price:7800,original:13000,colors:["#000","#c8a86b","#fff","#f9a8d4"],sizes:["35","36","37","38","39","40","41"],rating:4.5,reviews:2987,desc:"Minimalist open-toe mule sandals with block heel. Easy slip-on style. Features cushioned footbed for comfortable wear.",badge:""},
+  {id:45,name:"Oxford Lace-Up Brogues",cat:"footwear",sub:"formal",img:"https://images.unsplash.com/photo-1614252240798-14e2db11d5a9?w=400&q=80",price:13500,original:22000,colors:["#000","#8b4513"],sizes:["39","40","41","42","43","44","45"],rating:4.7,reviews:1234,desc:"Classic leather Oxford brogues with wingtip brogue detailing. Lace-up closure with leather lining. Rubber sole for durability.",badge:""},
+  {id:46,name:"Canvas Espadrilles",cat:"footwear",sub:"flats",img:"https://images.unsplash.com/photo-1603487742131-4160ec999306?w=400&q=80",price:5500,original:9200,colors:["#c8a86b","#1a1a6e","#c8102e","#000"],sizes:["35","36","37","38","39","40","41"],rating:4.4,reviews:3421,desc:"Classic lace-up canvas espadrilles with jute rope sole. Lightweight and breathable. Perfect for summer holidays and casual days.",badge:"SALE"},
+
+  // BAGS
+  {id:47,name:"Mini Crossbody Leather Bag",cat:"bags",sub:"crossbody",img:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80",price:8500,original:14000,colors:["#000","#8b4513","#c8102e","#c8a86b"],sizes:["One Size"],rating:4.8,reviews:3456,desc:"Compact mini crossbody bag in faux leather. Adjustable chain strap. Multiple interior pockets including card slot. Magnetic snap closure.",badge:"HOT"},
+  {id:48,name:"Large Canvas Tote Bag",cat:"bags",sub:"tote",img:"https://images.unsplash.com/photo-1594938298603-c8148c4b4d40?w=400&q=80",price:5200,original:8800,colors:["#c8a86b","#000","#e5e5e5","#8a9a6b"],sizes:["One Size"],rating:4.7,reviews:4321,desc:"Spacious canvas tote with leather handles. Internal zip pocket and two slip pockets. Strong canvas material with reinforced stitching.",badge:""},
+  {id:49,name:"Quilted Chain Shoulder Bag",cat:"bags",sub:"shoulder",img:"https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&q=80",price:12500,original:20000,colors:["#000","#c8a86b","#f9a8d4"],sizes:["One Size"],rating:4.9,reviews:2109,desc:"Classic quilted chain shoulder bag inspired by luxury fashion. Gold-tone chain strap with quilted PU leather exterior. Turn-lock closure.",badge:"HOT"},
+  {id:50,name:"Backpack Anti-Theft",cat:"bags",sub:"backpacks",img:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80",price:11500,original:19000,colors:["#000","#1a1a6e","#8a9a6b"],sizes:["One Size"],rating:4.7,reviews:5678,desc:"Smart anti-theft backpack with hidden zip pockets. USB charging port. Padded laptop compartment fits up to 15.6 inch. Water-resistant fabric.",badge:"NEW"},
+  {id:51,name:"Clutch Evening Bag",cat:"bags",sub:"clutch",img:"https://images.unsplash.com/photo-1575032617751-6ddec2089882?w=400&q=80",price:6800,original:11500,colors:["#d4a843","#000","#c8102e","#1a1a6e"],sizes:["One Size"],rating:4.6,reviews:1987,desc:"Sparkling sequin evening clutch bag. Fold-over flap with hidden magnetic snap. Interior mirror and card slots. Detachable wrist chain.",badge:""},
+  {id:52,name:"Straw Woven Beach Bag",cat:"bags",sub:"tote",img:"https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=400&q=80",price:4500,original:7800,colors:["#c8a86b","#f2c882"],sizes:["One Size"],rating:4.5,reviews:2876,desc:"Hand-woven straw beach bag with spacious interior. Leather top handles and inner zip pocket. Perfect for beach holidays and summer outings.",badge:"NEW"},
+  {id:53,name:"Waist Fanny Pack",cat:"bags",sub:"waistbag",img:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80",price:4200,original:7200,colors:["#000","#c8102e","#1a1a6e","#8a9a6b"],sizes:["One Size"],rating:4.5,reviews:4321,desc:"Compact fanny pack with adjustable waist strap. Multiple zip compartments. Can be worn as crossbody or waist bag. Casual and functional.",badge:""},
+
+  // MORE WOMEN
+  {id:54,name:"Floral Kimono Cardigan",cat:"women",sub:"tops",img:"https://images.unsplash.com/photo-1560243563-062bfc001d68?w=400&q=80",price:6500,original:10800,colors:["#f2c882","#f9a8d4","#c8d8a8"],sizes:["S","M","L","XL","2XL"],rating:4.7,reviews:2341,desc:"Flowy floral print kimono cardigan. Lightweight polyester fabric with open front design. Perfect layering piece for spring and summer.",badge:"NEW"},
+  {id:55,name:"Ribbed Knit Co-ord Set",cat:"women",sub:"sets",img:"https://images.unsplash.com/photo-1594938298603-c8148c4b4d40?w=400&q=80",price:9200,original:15500,colors:["#000","#e5e5e5","#f9a8d4","#93c5fd"],sizes:["XS","S","M","L","XL"],rating:4.8,reviews:3102,desc:"Matching ribbed knit set including crop top and high-waist skirt. Stretchy fabric. Coordinated set for effortless styling.",badge:"HOT"},
+  {id:56,name:"Denim Shorts High-Waist",cat:"women",sub:"bottoms",img:"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&q=80",price:5200,original:8800,colors:["#1a1a6e","#6b8e9f","#000"],sizes:["XS","S","M","L","XL"],rating:4.6,reviews:5432,desc:"Classic high-waist denim shorts with frayed hem. Button fly with five-pocket design. Available in multiple wash options.",badge:""},
+  {id:57,name:"Satin Slip Cami Dress",cat:"women",sub:"dresses",img:"https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&q=80",price:7800,original:13000,colors:["#f9e4b7","#f9a8d4","#000","#1a1a6e"],sizes:["XS","S","M","L","XL"],rating:4.7,reviews:1876,desc:"Luxurious satin slip dress with adjustable spaghetti straps. Bias-cut silhouette that skims the body. Elegant and minimalist.",badge:""},
+  {id:58,name:"Blazer Shorts Power Set",cat:"women",sub:"sets",img:"https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=400&q=80",price:13500,original:22000,colors:["#000","#1a1a6e","#c8a86b"],sizes:["XS","S","M","L","XL"],rating:4.8,reviews:2109,desc:"Power dressing blazer and shorts co-ord set. Tailored blazer with matching high-waist shorts. Professional meets fashion-forward.",badge:"NEW"},
+
+  // MORE MEN
+  {id:59,name:"Cargo Shorts",cat:"men",sub:"shorts",img:"https://images.unsplash.com/photo-1591195853828-11db59a44f43?w=400&q=80",price:5800,original:9500,colors:["#8a9a6b","#c8a86b","#000","#1a1a6e"],sizes:["S","M","L","XL","2XL"],rating:4.5,reviews:4321,desc:"Practical cargo shorts with multiple utility pockets. Adjustable waistband with drawstring. Durable ripstop fabric.",badge:""},
+  {id:60,name:"Embroidered Sweatshirt",cat:"men",sub:"hoodies",img:"https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=400&q=80",price:7500,original:12500,colors:["#e5e5e5","#000","#c8102e","#1a1a6e"],sizes:["S","M","L","XL","2XL","3XL"],rating:4.7,reviews:2987,desc:"Premium fleece sweatshirt with embroidered chest logo. Regular fit with ribbed cuffs and hem. Heavyweight cotton-polyester blend.",badge:"HOT"},
+  {id:61,name:"Tailored Trousers",cat:"men",sub:"pants",img:"https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400&q=80",price:8500,original:14000,colors:["#000","#1a1a6e","#6b6b6b","#c8a86b"],sizes:["28","30","32","34","36","38"],rating:4.8,reviews:1234,desc:"Smart tailored trousers in stretch fabric for professional settings. Flat-front design with pressed creases. Side and back pockets.",badge:""},
+  {id:62,name:"Windbreaker Jacket",cat:"men",sub:"jackets",img:"https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&q=80",price:10500,original:17500,colors:["#000","#1a1a6e","#8a9a6b","#c8102e"],sizes:["S","M","L","XL","2XL"],rating:4.6,reviews:1876,desc:"Lightweight windbreaker jacket with packable design. Water-resistant nylon shell. Zip pockets and adjustable hood.",badge:"NEW"},
+
+  // MORE ACCESSORIES
+  {id:63,name:"Wristwatch Minimalist",cat:"accessories",sub:"watches",img:"https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400&q=80",price:8500,original:14000,colors:["#d4a843","#c0c0c0","#000"],sizes:["One Size"],rating:4.8,reviews:2341,desc:"Clean minimalist wristwatch with slim case. Japanese quartz movement. Stainless steel or leather strap options. Scratch-resistant mineral glass.",badge:""},
+  {id:64,name:"Wide-Brim Sun Hat",cat:"accessories",sub:"hats",img:"https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400&q=80",price:4500,original:7500,colors:["#c8a86b","#000","#e5e5e5"],sizes:["One Size"],rating:4.6,reviews:3210,desc:"Stylish wide-brim summer hat for sun protection. Made from premium straw weave. Adjustable inner band. UPF 50+ sun protection.",badge:""},
+  {id:65,name:"Layered Chain Anklet",cat:"accessories",sub:"jewellery",img:"https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400&q=80",price:1800,original:3200,colors:["#d4a843","#c0c0c0"],sizes:["One Size"],rating:4.7,reviews:5678,desc:"Delicate layered chain anklet in gold or silver tone. Lobster clasp closure with 2cm extension chain. Tarnish-resistant finish.",badge:"SALE"},
+  {id:66,name:"Satin Sleep Mask",cat:"accessories",sub:"other",img:"https://images.unsplash.com/photo-1583241475880-083f84372725?w=400&q=80",price:1500,original:2800,colors:["#f9a8d4","#1a1a6e","#000"],sizes:["One Size"],rating:4.5,reviews:7654,desc:"Luxury satin sleep eye mask for better sleep. Adjustable elastic strap. Soft padding over eyes. Available in multiple colors.",badge:""},
+
+  // MORE FOOTWEAR
+  {id:67,name:"Thong Sandals Flat",cat:"footwear",sub:"sandals",img:"https://images.unsplash.com/photo-1603487742131-4160ec999306?w=400&q=80",price:4200,original:7200,colors:["#000","#c8a86b","#fff","#d4a843"],sizes:["35","36","37","38","39","40","41"],rating:4.4,reviews:4321,desc:"Simple flat thong sandals in faux leather. Comfortable foot strap with adjustable toe post. Versatile and easy to wear.",badge:""},
+  {id:68,name:"Chelsea Boots Ankle",cat:"footwear",sub:"boots",img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&q=80",price:15500,original:25000,colors:["#000","#8b4513"],sizes:["36","37","38","39","40","41","42"],rating:4.8,reviews:2109,desc:"Classic Chelsea ankle boots with elasticated side panels. Smooth PU upper with stacked heel. Pull-tab at back for easy wear.",badge:"HOT"},
+  {id:69,name:"Slip-On Moccasins",cat:"footwear",sub:"flats",img:"https://images.unsplash.com/photo-1614252240798-14e2db11d5a9?w=400&q=80",price:7200,original:12000,colors:["#c8a86b","#8b4513","#000"],sizes:["36","37","38","39","40","41","42"],rating:4.6,reviews:1876,desc:"Comfortable moccasin-style slip-on shoes. Soft suede upper with stitching detail. Padded insole and flexible sole.",badge:""},
+
+  // MORE BAGS
+  {id:70,name:"Bucket Bag Drawstring",cat:"bags",sub:"shoulder",img:"https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&q=80",price:9200,original:15500,colors:["#000","#c8a86b","#8b4513","#c8102e"],sizes:["One Size"],rating:4.7,reviews:2987,desc:"Trendy bucket bag with drawstring closure and long shoulder strap. Suede-effect exterior with inner lining and card pockets.",badge:"NEW"},
+  {id:71,name:"Clear Jelly Transparent Bag",cat:"bags",sub:"crossbody",img:"https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=400&q=80",price:5500,original:9200,colors:["#fff","#f9a8d4","#93c5fd"],sizes:["One Size"],rating:4.3,reviews:3456,desc:"Trendy transparent PVC jelly bag. See-through design lets your contents become part of the look. Chain shoulder strap.",badge:"NEW"},
+  {id:72,name:"Duffle Travel Bag",cat:"bags",sub:"travel",img:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80",price:14500,original:24000,colors:["#000","#1a1a6e","#8a9a6b"],sizes:["One Size"],rating:4.7,reviews:1987,desc:"Spacious duffle bag for travel and gym use. Multiple compartments including shoe pocket. Detachable shoulder strap and carry handles.",badge:""},
+
+  // EXTRA PRODUCTS FOR PAGINATION
+  {id:73,name:"Floral Print Co-ord Set",cat:"women",sub:"sets",img:"https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&q=80",price:10500,original:17500,colors:["#f2c882","#f9a8d4"],sizes:["XS","S","M","L","XL"],rating:4.7,reviews:1234,desc:"Beautiful floral co-ord set with cropped top and wide-leg pants. Lightweight fabric perfect for warm days.",badge:"HOT"},
+  {id:74,name:"Vintage Denim Jacket Women",cat:"women",sub:"outerwear",img:"https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=400&q=80",price:10200,original:17000,colors:["#1a1a6e","#6b8e9f","#000"],sizes:["XS","S","M","L","XL"],rating:4.6,reviews:2341,desc:"Classic denim jacket for women with button-up front. Cropped length hits at the waist. Suitable for layering.",badge:""},
+  {id:75,name:"Men's Dashiki Shirt",cat:"men",sub:"shirts",img:"https://images.unsplash.com/photo-1523380677598-64d85d9c75c8?w=400&q=80",price:6200,original:10500,colors:["#f2c882","#c8102e","#1a1a6e"],sizes:["S","M","L","XL","2XL"],rating:4.8,reviews:2987,desc:"Colorful African Dashiki shirt with embroidered neckline. 100% cotton. Suitable for cultural events and casual wear.",badge:"HOT"},
+  {id:76,name:"Neon Sports Bra",cat:"women",sub:"activewear",img:"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",price:3500,original:5800,colors:["#00ff88","#c8102e","#ff6600","#1a1a6e"],sizes:["XS","S","M","L","XL"],rating:4.6,reviews:4321,desc:"High-support sports bra with neon colorblock design. Moisture-wicking fabric. Padded cups and wide straps for comfort.",badge:""},
+  {id:77,name:"Yoga Leggings High-Waist",cat:"women",sub:"activewear",img:"https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400&q=80",price:5800,original:9500,colors:["#000","#1a1a6e","#c8102e","#8a9a6b"],sizes:["XS","S","M","L","XL","2XL"],rating:4.8,reviews:6543,desc:"Ultra-stretchy high-waist yoga leggings with tummy control. Four-way stretch fabric for full range of movement.",badge:"HOT"},
+  {id:78,name:"Men Athletic Shorts",cat:"men",sub:"activewear",img:"https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&q=80",price:4200,original:7200,colors:["#000","#1a1a6e","#c8102e","#8a9a6b"],sizes:["S","M","L","XL","2XL"],rating:4.5,reviews:3210,desc:"Lightweight athletic shorts with built-in liner. Moisture-wicking polyester. Elastic waistband with drawstring. Side pockets.",badge:""},
+  {id:79,name:"Embellished Party Heels",cat:"footwear",sub:"heels",img:"https://images.unsplash.com/photo-1596703263926-422f7e739f36?w=400&q=80",price:11500,original:19000,colors:["#d4a843","#c0c0c0","#000"],sizes:["35","36","37","38","39","40"],rating:4.7,reviews:1456,desc:"Dazzling embellished stiletto heels. Crystal rhinestone embellishments on straps. Perfect for parties and special occasions.",badge:""},
+  {id:80,name:"Laptop Sleeve Bag",cat:"bags",sub:"other",img:"https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&q=80",price:3800,original:6500,colors:["#000","#1a1a6e","#c8102e"],sizes:["13 inch","15 inch"],rating:4.5,reviews:2345,desc:"Protective neoprene laptop sleeve with handle. Soft interior lining prevents scratches. Front zip pocket for accessories.",badge:""},
+];
+
+let cart = JSON.parse(localStorage.getItem('ngCart') || '[]');
+let orders = JSON.parse(localStorage.getItem('ngOrders') || '[]');
+let currentCategory = 'all';
+let currentPage = 1;
+const PRODUCTS_PER_PAGE = 24;
+let currentModalProduct = null;
+
+// ===================== PAGE NAVIGATION =====================
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const el = document.getElementById('page-'+page);
+  if(el) el.classList.add('active');
+  document.getElementById('searchResultsPage').style.display = 'none';
+  window.scrollTo(0,0);
+  if(page === 'track') renderOrders();
+  if(page === 'admin') renderAdmin();
+  if(page === 'checkout') renderCheckout();
+  updateNavActive(page);
+}
+
+function updateNavActive(page) {
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  const map = {home:'nav-home',shop:'nav-shop',women:'nav-women',men:'nav-men',accessories:'nav-accessories',footwear:'nav-footwear',bags:'nav-bags'};
+  if(map[page]) document.getElementById(map[page])?.classList.add('active');
+}
+
+function showShop(cat) {
+  currentCategory = cat;
+  currentPage = 1;
+  showPage('shop');
+  document.getElementById('shopBreadcrumb').textContent = cat === 'all' ? 'All Products' : cat.charAt(0).toUpperCase()+cat.slice(1);
+  // Update filter radio
+  const radios = document.querySelectorAll('input[name="cat"]');
+  radios.forEach(r => r.checked = r.value === cat);
+  applyFilters();
+}
+
+// ===================== PRODUCT RENDERING =====================
+function renderProductCard(p) {
+  const discount = p.original ? Math.round((1-p.price/p.original)*100) : 0;
+  return `<div class="product-card" onclick="openModal(${p.id})">
+    <div class="product-img-wrap">
+      <img src="${p.img}" alt="${p.name}" loading="lazy">
+      ${p.badge ? `<span class="product-badge${p.badge==='NEW'?' new':p.badge==='HOT'?' hot':''}">${p.badge}</span>` : ''}
+      <button class="product-wishlist" onclick="event.stopPropagation();toggleWishlist(this)">♡</button>
+      <button class="product-quick-add" onclick="event.stopPropagation();quickAdd(${p.id})">+ Quick Add</button>
+    </div>
+    <div class="product-info">
+      <div class="product-name">${p.name}</div>
+      <div class="product-prices">
+        <span class="product-price">₦${p.price.toLocaleString()}</span>
+        ${p.original ? `<span class="product-original">₦${p.original.toLocaleString()}</span>` : ''}
+        ${discount > 0 ? `<span class="product-discount">-${discount}%</span>` : ''}
+      </div>
+      <div class="product-rating">
+        <span class="stars">${'★'.repeat(Math.floor(p.rating))}${'☆'.repeat(5-Math.floor(p.rating))}</span>
+        <span class="review-count">(${p.reviews.toLocaleString()})</span>
+      </div>
+      <div class="product-sizes">${p.sizes.slice(0,4).map(s=>`<span class="size-tag">${s}</span>`).join('')}</div>
+    </div>
+  </div>`;
+}
+
+function renderFeaturedSections() {
+  const women = PRODUCTS.filter(p=>p.cat==='women').slice(0,8);
+  const men = PRODUCTS.filter(p=>p.cat==='men').slice(0,8);
+  const acc = PRODUCTS.filter(p=>p.cat==='accessories'||p.cat==='footwear').slice(0,8);
+  document.getElementById('featured-women').innerHTML = women.map(renderProductCard).join('');
+  document.getElementById('featured-men').innerHTML = men.map(renderProductCard).join('');
+  document.getElementById('featured-accessories').innerHTML = acc.map(renderProductCard).join('');
+}
+
+function applyFilters() {
+  const cat = document.querySelector('input[name="cat"]:checked')?.value || currentCategory || 'all';
+  const sort = document.getElementById('sortBy')?.value || document.getElementById('sortBy2')?.value || 'default';
+  const minP = parseInt(document.getElementById('priceMin')?.value) || 0;
+  const maxP = parseInt(document.getElementById('priceMax')?.value) || Infinity;
+
+  let filtered = PRODUCTS.filter(p => (cat==='all' || p.cat===cat));
+  if(minP) filtered = filtered.filter(p=>p.price>=minP);
+  if(maxP !== Infinity) filtered = filtered.filter(p=>p.price<=maxP);
+
+  if(sort==='price-low') filtered.sort((a,b)=>a.price-b.price);
+  else if(sort==='price-high') filtered.sort((a,b)=>b.price-a.price);
+  else if(sort==='newest') filtered.sort((a,b)=>b.id-a.id);
+  else if(sort==='popular') filtered.sort((a,b)=>b.reviews-a.reviews);
+
+  const total = filtered.length;
+  document.getElementById('productCount').textContent = total;
+  const start = (currentPage-1)*PRODUCTS_PER_PAGE;
+  const paginated = filtered.slice(start, start+PRODUCTS_PER_PAGE);
+  document.getElementById('shopGrid').innerHTML = paginated.map(renderProductCard).join('');
+  renderPagination(total, filtered);
+}
+
+function renderPagination(total, allFiltered) {
+  const pages = Math.ceil(total/PRODUCTS_PER_PAGE);
+  let html = '';
+  for(let i=1;i<=pages;i++) {
+    html += `<button onclick="goToPage(${i})" style="border:1px solid ${i===currentPage?'var(--primary)':'var(--border)'};background:${i===currentPage?'var(--primary)':'#fff'};color:${i===currentPage?'#fff':'var(--text)'};padding:8px 14px;border-radius:6px;cursor:pointer;font-size:13px;">${i}</button>`;
+  }
+  document.getElementById('shopPagination').innerHTML = html;
+}
+
+function goToPage(n) {
+  currentPage = n;
+  applyFilters();
+  document.getElementById('page-shop').scrollIntoView({behavior:'smooth'});
+}
+
+function resetFilters() {
+  document.querySelectorAll('input[name="cat"]').forEach(r => r.checked = r.value==='all');
+  document.getElementById('priceMin').value = '';
+  document.getElementById('priceMax').value = '';
+  currentPage = 1;
+  applyFilters();
+}
+
+// ===================== SEARCH =====================
+function handleSearch() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  if(!q) return closeSearch();
+  const results = PRODUCTS.filter(p=>p.name.toLowerCase().includes(q)||p.cat.includes(q)||p.sub?.includes(q));
+  document.getElementById('searchQuery').textContent = q;
+  document.getElementById('searchGrid').innerHTML = results.length ? results.map(renderProductCard).join('') : '<p style="color:var(--grey-500);grid-column:1/-1;padding:40px;text-align:center;">No products found for "'+q+'"</p>';
+  document.getElementById('searchResultsPage').style.display = 'block';
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+}
+
+function closeSearch() {
+  document.getElementById('searchResultsPage').style.display = 'none';
+  showPage('home');
+}
+
+// ===================== CART =====================
+function toggleCart() {
+  document.getElementById('cartPanel').classList.toggle('open');
+  document.getElementById('cartOverlay').classList.toggle('active');
+  renderCart();
+}
+
+function renderCart() {
+  const items = document.getElementById('cartItems');
+  const footer = document.getElementById('cartFooter');
+  if(!cart.length) {
+    items.innerHTML = '<div class="cart-empty"><div class="empty-icon">🛒</div><p>Your cart is empty</p><button class="btn-primary" onclick="toggleCart();showShop(\'all\')" style="margin-top:16px;">Start Shopping</button></div>';
+    footer.style.display = 'none';
+    return;
+  }
+  let subtotal = 0;
+  items.innerHTML = cart.map((item,i) => {
+    subtotal += item.price * item.qty;
+    return `<div class="cart-item">
+      <img src="${item.img}" alt="${item.name}">
+      <div class="cart-item-info">
+        <div class="cart-item-name">${item.name}</div>
+        <div class="cart-item-meta">Size: ${item.size} | Color: ${item.color||'Default'}</div>
+        <div class="cart-item-actions">
+          <div class="qty-control">
+            <button class="qty-btn" onclick="updateCartQty(${i},-1)">-</button>
+            <span class="qty-val">${item.qty}</span>
+            <button class="qty-btn" onclick="updateCartQty(${i},1)">+</button>
+          </div>
+          <span class="cart-item-price">₦${(item.price*item.qty).toLocaleString()}</span>
+          <button class="remove-item" onclick="removeCartItem(${i})">🗑</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('cartSubtotal').textContent = '₦'+subtotal.toLocaleString();
+  footer.style.display = 'block';
+  updateCartCount();
+}
+
+function updateCartQty(i, delta) {
+  cart[i].qty = Math.max(1, cart[i].qty + delta);
+  saveCart(); renderCart();
+}
+
+function removeCartItem(i) {
+  cart.splice(i,1);
+  saveCart(); renderCart();
+}
+
+function saveCart() {
+  localStorage.setItem('ngCart', JSON.stringify(cart));
+  updateCartCount();
+}
+
+function updateCartCount() {
+  const total = cart.reduce((s,i)=>s+i.qty,0);
+  document.getElementById('cartCount').textContent = total;
+  document.getElementById('cartItemCount').textContent = total;
+}
+
+function quickAdd(id) {
+  const p = PRODUCTS.find(x=>x.id===id);
+  if(!p) return;
+  addToCart(p, p.sizes[0] || 'M', p.colors?.[0] || '#000');
+}
+
+function addToCart(p, size, color) {
+  const existing = cart.find(i=>i.id===p.id && i.size===size);
+  if(existing) { existing.qty++; }
+  else { cart.push({id:p.id, name:p.name, img:p.img, price:p.price, size, color, qty:1}); }
+  saveCart();
+  showToast(`"${p.name}" added to cart! 🛒`);
+}
+
+// ===================== PRODUCT MODAL =====================
+function openModal(id) {
+  const p = PRODUCTS.find(x=>x.id===id);
+  if(!p) return;
+  currentModalProduct = p;
+  document.getElementById('modalImg').src = p.img;
+  document.getElementById('modalCategory').textContent = p.cat.toUpperCase() + (p.sub ? ' › ' + p.sub.toUpperCase() : '');
+  document.getElementById('modalName').textContent = p.name;
+  document.getElementById('modalPrice').textContent = '₦'+p.price.toLocaleString();
+  document.getElementById('modalOriginal').textContent = p.original ? '₦'+p.original.toLocaleString() : '';
+  const disc = p.original ? Math.round((1-p.price/p.original)*100) : 0;
+  document.getElementById('modalBadge').textContent = disc > 0 ? '-'+disc+'%' : '';
+  document.getElementById('modalBadge').style.display = disc > 0 ? 'inline-flex' : 'none';
+  document.getElementById('modalStars').textContent = '★'.repeat(Math.floor(p.rating))+'☆'.repeat(5-Math.floor(p.rating));
+  document.getElementById('modalReviews').textContent = `(${p.reviews.toLocaleString()} reviews)`;
+  document.getElementById('modalDesc').textContent = p.desc;
+  document.getElementById('modalQty').value = 1;
+
+  const sizesEl = document.getElementById('modalSizes');
+  sizesEl.innerHTML = p.sizes.map((s,i)=>`<div class="size-opt${i===0?' selected':''}" onclick="selectSize(this)">${s}</div>`).join('');
+
+  const colorsEl = document.getElementById('modalColors');
+  colorsEl.innerHTML = p.colors ? p.colors.map((c,i)=>`<div class="color-dot${i===0?' selected':''}" style="background:${c}" onclick="selectColor(this)" title="${c}"></div>`).join('') : '';
+
+  document.getElementById('productModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('productModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function selectSize(el) {
+  document.querySelectorAll('.size-opt').forEach(s=>s.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function selectColor(el) {
+  document.querySelectorAll('.color-dot').forEach(c=>c.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function changeModalQty(d) {
+  const el = document.getElementById('modalQty');
+  el.value = Math.max(1, parseInt(el.value)+d);
+}
+
+function addToCartFromModal() {
+  if(!currentModalProduct) return;
+  const size = document.querySelector('.size-opt.selected')?.textContent || currentModalProduct.sizes[0];
+  const color = document.querySelector('.color-dot.selected')?.style.background || '#000';
+  const qty = parseInt(document.getElementById('modalQty').value) || 1;
+  for(let i=0;i<qty;i++) addToCart(currentModalProduct, size, color);
+  closeModal();
+}
+
+function toggleWishlist(btn) {
+  btn.classList.toggle('active');
+  btn.textContent = btn.classList.contains('active') ? '♥' : '♡';
+  showToast(btn.classList.contains('active') ? 'Added to wishlist! ♥' : 'Removed from wishlist');
+}
+
+// ===================== CHECKOUT =====================
+function goToCheckout() {
+  if(!cart.length) { showToast('Your cart is empty!'); return; }
+  showPage('checkout');
+  renderCheckout();
+}
+
+function renderCheckout() {
+  const items = document.getElementById('checkoutItems');
+  let subtotal = 0;
+  items.innerHTML = cart.map(item => {
+    subtotal += item.price * item.qty;
+    return `<div class="order-summary-item">
+      <img src="${item.img}" alt="${item.name}">
+      <div style="flex:1;"><div style="font-size:13px;font-weight:600;">${item.name}</div><div style="font-size:12px;color:var(--grey-500);">×${item.qty} | ${item.size}</div></div>
+      <div style="font-weight:700;font-size:14px;">₦${(item.price*item.qty).toLocaleString()}</div>
+    </div>`;
+  }).join('');
+  const delivery = subtotal >= 25000 ? 0 : 1500;
+  document.getElementById('checkoutSubtotal').textContent = '₦'+subtotal.toLocaleString();
+  document.getElementById('checkoutDelivery').textContent = delivery ? '₦'+delivery.toLocaleString() : 'FREE';
+  document.getElementById('checkoutTotal').textContent = '₦'+(subtotal+delivery).toLocaleString();
+}
+
+function placeOrder() {
+  const first = document.getElementById('firstName')?.value;
+  const last = document.getElementById('lastName')?.value;
+  const phone = document.getElementById('phone')?.value;
+  const address = document.getElementById('address')?.value;
+  if(!first||!last||!phone||!address) { showToast('Please fill in all required fields ⚠️'); return; }
+
+  const orderId = '#NGC-' + Math.floor(100000+Math.random()*900000);
+  let subtotal = cart.reduce((s,i)=>s+i.price*i.qty,0);
+  const delivery = subtotal>=25000?0:1500;
+  const total = subtotal+delivery;
+
+  const order = {
+    id: orderId,
+    customer: first+' '+last,
+    phone, address,
+    items: [...cart],
+    total,
+    date: new Date().toLocaleDateString('en-NG'),
+    status: 'Pending'
+  };
+
+  orders.unshift(order);
+  localStorage.setItem('ngOrders', JSON.stringify(orders));
+
+  document.getElementById('successOrderId').textContent = orderId;
+  document.getElementById('successAmount').textContent = '₦'+total.toLocaleString();
+
+  cart = [];
+  saveCart();
+  showPage('success');
+}
+
+function copyText(text, label) {
+  navigator.clipboard.writeText(text).catch(()=>{});
+  showToast(`${label} copied! ✓`);
+}
+
+// ===================== ORDER TRACKING =====================
+function renderOrders() {
+  const list = document.getElementById('ordersList');
+  if(!orders.length) { list.innerHTML = '<p style="color:var(--grey-500);">No orders found. Place an order first!</p>'; return; }
+  list.innerHTML = orders.map(o => `
+    <div class="order-track-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+        <div><div style="font-family:var(--font-display);font-size:18px;font-weight:700;">${o.id}</div><div style="font-size:13px;color:var(--grey-500);">${o.date} | ${o.customer}</div></div>
+        <div><span class="status-badge status-${o.status.toLowerCase()}">${o.status}</span></div>
+        <div style="font-weight:700;font-size:18px;color:var(--primary);">₦${o.total.toLocaleString()}</div>
+      </div>
+      <div class="track-status">
+        <div class="track-step"><div class="track-dot ${['Pending','Paid','Shipped','Delivered'].indexOf(o.status)>=0?'done':''}">📦</div><div class="track-label ${o.status==='Pending'?'active':''}">Pending</div></div>
+        <div class="track-step"><div class="track-dot ${['Paid','Shipped','Delivered'].includes(o.status)?'done':''}">💳</div><div class="track-label ${o.status==='Paid'?'active':''}">Paid</div></div>
+        <div class="track-step"><div class="track-dot ${['Shipped','Delivered'].includes(o.status)?'done':''}">🚚</div><div class="track-label ${o.status==='Shipped'?'active':''}">Shipped</div></div>
+        <div class="track-step"><div class="track-dot ${o.status==='Delivered'?'done active':''}">✅</div><div class="track-label ${o.status==='Delivered'?'active':''}">Delivered</div></div>
+      </div>
+      <div style="font-size:13px;color:var(--grey-600);">${o.items.length} item(s) | Delivery to: ${o.address}</div>
+    </div>
+  `).join('');
+}
+
+function trackOrder() {
+  const q = document.getElementById('trackInput').value.trim().toUpperCase();
+  const order = orders.find(o => o.id.toUpperCase() === q);
+  const res = document.getElementById('trackResult');
+  if(!order) { res.innerHTML = '<div style="background:#fff3e0;border-radius:8px;padding:16px;color:#e65100;">❌ Order not found. Please check your order ID.</div>'; return; }
+  res.innerHTML = `<div class="order-track-card" style="border:2px solid var(--primary);">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:16px;">
+      <div><div style="font-family:var(--font-display);font-size:20px;font-weight:700;">${order.id}</div><div style="font-size:13px;color:var(--grey-500);">${order.date} | ${order.customer}</div></div>
+      <span class="status-badge status-${order.status.toLowerCase()}" style="font-size:14px;padding:6px 14px;">${order.status}</span>
+    </div>
+    <div class="track-status">
+      <div class="track-step"><div class="track-dot done">📦</div><div class="track-label">Pending</div></div>
+      <div class="track-step"><div class="track-dot ${['Paid','Shipped','Delivered'].includes(order.status)?'done':''}">💳</div><div class="track-label">Paid</div></div>
+      <div class="track-step"><div class="track-dot ${['Shipped','Delivered'].includes(order.status)?'done':''}">🚚</div><div class="track-label">Shipped</div></div>
+      <div class="track-step"><div class="track-dot ${order.status==='Delivered'?'done active':''}">✅</div><div class="track-label">Delivered</div></div>
+    </div>
+  </div>`;
+}
+
+// ===================== ADMIN =====================
+function renderAdmin() {
+  const stats = [
+    {label:'Total Orders',val:orders.length,icon:'📦'},
+    {label:'Pending',val:orders.filter(o=>o.status==='Pending').length,icon:'⏳'},
+    {label:'Paid',val:orders.filter(o=>o.status==='Paid').length,icon:'💳'},
+    {label:'Delivered',val:orders.filter(o=>o.status==='Delivered').length,icon:'✅'},
+  ];
+  document.getElementById('adminStats').innerHTML = stats.map(s=>`
+    <div style="background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center;">
+      <div style="font-size:32px;">${s.icon}</div>
+      <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--primary);">${s.val}</div>
+      <div style="font-size:13px;color:var(--grey-500);">${s.label}</div>
+    </div>`).join('');
+  renderAdminTable(orders);
+}
+
+function renderAdminTable(data) {
+  document.getElementById('adminOrderBody').innerHTML = data.length ? data.map(o=>`
+    <tr>
+      <td style="font-weight:700;color:var(--primary);">${o.id}</td>
+      <td>${o.customer}<br><span style="font-size:11px;color:var(--grey-500);">${o.phone}</span></td>
+      <td>${o.items.length} item(s)</td>
+      <td style="font-weight:700;">₦${o.total.toLocaleString()}</td>
+      <td>${o.date}</td>
+      <td><span class="status-badge status-${o.status.toLowerCase()}">${o.status}</span></td>
+      <td>
+        <select class="admin-select" onchange="updateOrderStatus('${o.id}',this.value)">
+          <option ${o.status==='Pending'?'selected':''}>Pending</option>
+          <option ${o.status==='Paid'?'selected':''}>Paid</option>
+          <option ${o.status==='Shipped'?'selected':''}>Shipped</option>
+          <option ${o.status==='Delivered'?'selected':''}>Delivered</option>
+        </select>
+      </td>
+    </tr>`).join('') : '<tr><td colspan="7" style="text-align:center;padding:32px;color:var(--grey-500);">No orders yet</td></tr>';
+}
+
+function updateOrderStatus(id, status) {
+  const order = orders.find(o=>o.id===id);
+  if(order) { order.status = status; localStorage.setItem('ngOrders',JSON.stringify(orders)); showToast(`Order ${id} updated to ${status} ✅`); renderAdmin(); }
+}
+
+function filterAdminOrders(q) {
+  const filtered = orders.filter(o=>o.id.toLowerCase().includes(q.toLowerCase())||o.customer.toLowerCase().includes(q.toLowerCase()));
+  renderAdminTable(filtered);
+}
+
+// ===================== TOAST =====================
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 3000);
+}
+
+// ===================== INIT =====================
+document.addEventListener('DOMContentLoaded', () => {
+  renderFeaturedSections();
+  updateCartCount();
+});
+
+// Mobile menu (simple)
+function toggleMobileMenu() {
+  const links = document.querySelector('.nav-links');
+  if(links.style.display === 'flex') { links.style.display = ''; }
+  else { links.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#fff;padding:16px;border-bottom:1px solid var(--border);z-index:999;gap:4px;'; }
+}
+</script>
+</body>
+</html>
